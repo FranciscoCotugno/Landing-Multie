@@ -1,0 +1,331 @@
+# Multie — biblia de la landing
+
+17 de noviembre de 2026 · Cotu
+
+Todo lo necesario para construir la landing de Multie: qué es, qué dice, cómo se mueve, cómo se ve, con qué assets y cómo trabajamos. Lo que no esté acá se consulta con Cotu antes de decidirlo.
+
+## Contexto y reglas
+
+Multie convierte videos largos en piezas cortas y las publica todos los días desde muchas cuentas propias, en teléfonos reales. Es un producto de Funke. La landing tiene un solo objetivo: que el visitante pida una propuesta por mail o por WhatsApp.
+
+- **Para quién:** marcas personales y creadores con mucho material grabado (podcasts, clases, streams). Mercados: Argentina, el resto de Latinoamérica y España.
+- **Tono:** serio, premium, directo y un poco provocador.
+- **Palabra clave:** "multicuentas", alternada con "teléfonos propios" o "teléfonos reales".
+- **Nunca:** "granja", "no son bots", "no prometemos resultados" ni precios.
+- **Clientes:** no se nombra a ninguno sin permiso.
+- **Los teléfonos reales:** no se muestran filmados. Se representan con diseño y 3D.
+- **Marca:** el manual de Funke es referencia, no regla. Multie tiene logo propio y Funke aparece solo como firma: "un producto de funke".
+
+## Guion
+
+Textos aprobados por Cotu. Van tal cual: si alguno no entra en el diseño, se consulta antes de cambiarlo.
+
+**1 · Apertura**
+
+- Etiqueta: multie · edición y distribución con multicuentas
+- Titular: **El contenido ya está grabado. Ahora tiene que llegar a alguien.**
+- Texto: Un podcast, una clase o un stream dejan horas de material. Solo hace falta grabarlo. Multie hace todo lo demás: elige los mejores momentos, los convierte en videos cortos y los publica todos los días desde teléfonos propios.
+- Remate: **Pasanos el archivo. Del resto nos encargamos nosotros.**
+
+**2 · Embudo**
+
+- Titular: **Una sola cuenta tiene un límite.**
+- Texto: En redes, el alcance es cuestión de volumen. Nadie sabe qué video va a explotar, por eso hacen falta muchos. Imagina cientos de cuentas publicando tu contenido todos los días.
+- Etiqueta: multicuentas
+- Titular: **Un sistema de teléfonos publicando a la vez.**
+- Texto: Multie trabaja con un ecosistema de teléfonos reales. Cada teléfono maneja sus propias cuentas, con su propia conexión, y todas publican al mismo tiempo, todos los días. Un solo video largo sale convertido en decenas de piezas, por decenas de cuentas a la vez.
+
+**3 · El proceso**
+
+- 01 **Se envía el material.** Un archivo o un link de YouTube. Sirve lo que se graba esta semana y también el archivo viejo que nunca se usó.
+- 02 **Elegimos y editamos.** Buscamos los momentos que se sostienen solos y los armamos en vertical, con subtítulos y con el estilo que el cliente elige en la plataforma.
+- 03 **Repartimos los videos.** Los videos se distribuyen entre las cuentas según la estrategia del proyecto: qué publica cada una, en qué horario y con qué frecuencia.
+- 04 **Se publica y se mide.** Las cuentas publican todos los días. En la plataforma se ve en vivo qué video funciona y por qué.
+
+**4 · La escala**
+
+- Etiqueta: la escala
+- Titular: **Un plan a tu medida.**
+- Contador: 5 · 10 · 50 · 100 cuentas
+- Texto: Cuentas en TikTok, Instagram y Facebook, para llegar a cada público en la red donde está.
+
+**5 · Cierre**
+
+- Logo de Multie
+- Pregunta: **¿Tenés material que no estás aprovechando?**
+- Texto: Con una charla alcanza para verlo y armar un plan.
+- Campo de mail con el botón **Pedir una propuesta** y el botón **Hablar por WhatsApp**
+- Firma: un producto de funke
+
+**Fuera de la secuencia (ubicación a definir)**
+
+- Etiqueta: la diferencia
+- Titular: **Las cuentas son nuestras.**
+- Texto: Las agencias de clipping reparten el video entre una red de cuentas ajenas y le pagan a cada una por vista. Quién lo sube, cuándo y cómo se ve queda fuera de su control. En Multie cada cuenta es propia: nace en uno de nuestros teléfonos, la manejamos nosotros y decidimos qué publica. Por eso el contenido sale con el tono y el cuidado que la marca necesita.
+
+El trato mezcla el "tu" neutro ("Imagina", "tu medida") con el voseo del cierre ("Tenés"). Es una decisión de Cotu: no se unifica.
+
+## Cómo funcionan todas las escenas
+
+Cada escena queda fija en pantalla mientras se scrollea, y el scroll hace avanzar lo que pasa adentro. No hay botones ni clics: la historia la maneja el dedo.
+
+- **Duración:** cada escena dura una cantidad de pantallas de scroll. Acá los momentos se marcan en porcentaje de esa duración: 0 % es cuando la escena llega y 100 % cuando se va.
+- **Sin inercia:** la animación sigue al scroll exacto, sin suavizado ni rebote. Tampoco hay indicadores de avance: ni barras, ni "paso 1/4", ni nada parecido.
+- **Textos:** aparecen y desaparecen con un fundido corto en el momento que marca cada escena. Nunca hay dos textos encima.
+- **Celular primero:** todo se diseña para 390 px de ancho y después se adapta a compu. Ningún objeto tapa un texto.
+- **Teléfonos:** muchos teléfonos desperdigados por la pantalla, sin patrón. Nada de grillas rígidas que la llenen.
+- **Fondo:** la apertura arranca en el degradado cálido, pasa a negro plano, sin estrellas, y el cierre vuelve al degradado.
+- **Encabezado fijo:** logo de Multie a la izquierda y botón Contacto a la derecha, que lleva al cierre. Se oculta en la escena de cierre.
+
+En total son unas 20 pantallas de scroll. Si al probarlo en el celular se siente largo, se acortan los tramos sin cambiar el orden.
+
+## Escena 1 — Apertura
+
+Un teléfono en 3D sobre el degradado cálido muestra un video y, al bajar, resulta ser uno entre cientos. Dura 3,2 pantallas. Textos: guion, punto 1.
+
+**Lo que se ve al llegar**
+
+- Fondo con el degradado cálido y grano suave. Encabezado con el logo en blanco y el botón Contacto de vidrio.
+- Arriba: los datos editoriales chicos, la etiqueta "multie · edición y distribución con multicuentas", el titular grande a la izquierda y el párrafo (a la derecha en compu, debajo en celular). Detrás del teléfono, "multie" gigante y semitransparente.
+- Abajo: el teléfono protagonista, negro y metálico, girado casi de costado. En la pantalla corre un video de un creador hablando a cámara.
+- En compu, un botón redondo con una flecha para bajar.
+
+**Al scrollear**
+
+- **0 a 100 %:** el teléfono gira hasta quedar de frente y la cámara se aleja de a poco. Su pantalla se apaga un poco: deja de ser el protagonista y pasa a ser uno más.
+- **18 a 68 %:** detrás aparecen muchos teléfonos apagados, desperdigados sin patrón y a distintas distancias.
+- **0 a 50 %:** se ve el primer texto. Después se va.
+- **56 a 100 %:** aparece el remate "Pasanos el archivo. Del resto nos encargamos nosotros.", grande y abajo al centro.
+- **70 a 100 %:** el fondo pasa del degradado al negro.
+
+**Celular y compu**
+
+- En celular el teléfono va más abajo para no tapar el texto.
+- En compu los teléfonos de fondo se reparten en todo el ancho.
+
+## Escena 2 — Embudo
+
+Un embudo transparente se llena de videos hasta saturarse y después los reparte entre muchos teléfonos que se van encendiendo. El embudo es el problema; los teléfonos son la solución. El embudo es grande y los videos también: pocos y grandes en vez de muchos y chicos, que además hace la página más liviana. Dura 6,2 pantallas. Textos: guion, punto 2.
+
+**Lo que se ve al llegar**
+
+- Fondo negro.
+- Arriba: el titular "Una sola cuenta tiene un límite." y su párrafo.
+- Debajo del texto, el embudo transparente, vacío.
+- Abajo, muchos teléfonos apagados desperdigados, sin patrón.
+
+**Al scrollear**
+
+- **0 a 44 %:** caen videos verticales desde arriba y el embudo se llena de a poco. A medida que sube el nivel, brilla más naranja.
+- **44 a 60 %:** el embudo está lleno y vibra: no da abasto.
+- **62 %:** cambia el texto. Etiqueta "multicuentas" y titular "Un sistema de teléfonos publicando a la vez.", con su párrafo.
+- **65 a 92 %:** el embudo se vacía. Cada video sale por el cuello, viaja a un teléfono y lo enciende con un brillo naranja, en orden salteado.
+- **92 a 100 %:** todos los teléfonos encendidos.
+
+**Celular y compu**
+
+- El embudo siempre va arriba de los teléfonos y empieza debajo del texto, sin pisarlo.
+
+## Escena 3 — El proceso
+
+El scroll vertical mueve cuatro paneles de costado, uno por pantalla, y cada uno muestra un paso con una animación propia. Dura 5,2 pantallas. Textos: guion, punto 3.
+
+**Lo que se ve siempre**
+
+- Fondo negro.
+- Cada panel lleva número, título, animación y párrafo.
+
+**Al scrollear**
+
+- **0 a 33 % · 01 Se envía el material:** una tira larga de video corre de costado. Es el video largo tal cual llega.
+- **33 a 66 % · 02 Elegimos y editamos:** sobre la tira aparecen 4 recuadros naranjas que marcan los mejores momentos. De cada uno sale un video corto vertical.
+- **66 a 100 % · 03 Repartimos los videos:** 5 videos cortos bajan y entran cada uno en un teléfono, que se enciende.
+- **Al final · 04 Se publica y se mide:** una fila de teléfonos encendidos, todos publicando.
+
+**Abierto:** el paso 04 dice "en la plataforma se ve en vivo qué video funciona". Se puede sumar una vista simple de la plataforma con métricas. Hay que coordinarlo con lo que Agustín tenga de la plataforma.
+
+## Escena 4 — La escala
+
+Los teléfonos crecen de 5 a 100 mientras un contador grande marca la cantidad de cuentas. Dura 4,6 pantallas. Textos: guion, punto 4.
+
+**Lo que se ve**
+
+- Fondo negro.
+- Arriba: la etiqueta "la escala", el titular "Un plan a tu medida." y la línea de las redes.
+- Al centro, teléfonos encendidos, sin ocupar toda la pantalla. Abajo, el contador con la palabra "cuentas".
+
+**Al scrollear**
+
+- **0 a 25 %:** 5 cuentas.
+- **25 a 50 %:** 10 cuentas.
+- **50 a 75 %:** 50 cuentas.
+- **75 a 100 %:** 100 cuentas.
+- Cada cambio se anima: aparecen más teléfonos.
+
+**Los teléfonos:** no ocupan toda la pantalla. Hay dos caminos para probar: una grilla simétrica más chica, o teléfonos dispersos sin patrón. La cantidad en pantalla no tiene que ser literal: el número lo dice el contador.
+
+**Redes:** se publica en TikTok, Instagram y Facebook.
+
+## Escena 5 — Cierre
+
+Una pantalla con el degradado cálido, quieta y simple, con una sola acción: pedir una propuesta. Es una pantalla normal, sin animación de scroll. Textos: guion, punto 5.
+
+**Lo que se ve, de arriba hacia abajo**
+
+- Fondo con el degradado cálido. Textos en blanco; el botón principal en negro y el de WhatsApp con contorno blanco.
+- El logo de Multie, grande.
+- La pregunta "¿Tenés material que no estás aprovechando?" y la línea "Con una charla alcanza para verlo y armar un plan."
+- Un campo de mail con el botón "Pedir una propuesta".
+- El botón "Hablar por WhatsApp", que abre WhatsApp con un mensaje ya escrito.
+- Abajo y chico: "un producto de funke".
+
+**Comportamiento**
+
+- El encabezado fijo se oculta en esta pantalla.
+- Al mandar el mail aparece una confirmación en la misma pantalla. Agustín define a dónde llega el mail.
+
+**Abierto:** mail y número de WhatsApp reales.
+
+**Footer: "multie" gigante que se ilumina**
+
+Al pie de la página va la palabra "multie" enorme, ocupando todo el ancho y cortada por el borde de abajo. Las letras apenas se distinguen del fondo: casi invisibles. Referencia: `referencias/03-footer-letras.mp4`.
+
+- **En compu:** al pasar el mouse sobre una letra, se enciende en naranja con un fundido suave (alrededor de 0,4 s). Al salir el mouse, vuelve a su color con el mismo fundido. Se ilumina una letra por vez.
+- **En celular:** como no hay mouse, la letra se enciende al tocarla. Cuando el footer entra en pantalla, además, las letras se encienden solas una por una, despacio, una sola vez.
+- **Arriba de la palabra:** una frase corta grande, los links (Contacto, WhatsApp, Instagram, TikTok) y la firma "un producto de funke" chica, en la tipografía de detalles.
+- **Para construirlo:** el logo de Multie hoy es un solo trazo (`assets/logo/`). Hay que separarlo en sus seis letras (m, u, l, t, i, e) para que cada una se pueda encender por separado.
+
+## Fuera de esta secuencia
+
+- **Las cuentas son nuestras:** la diferencia con las agencias de clipping queda afuera de las escenas. Va en otra parte de la página, a definir.
+
+## Dirección visual
+
+La base es la dirección A: un degradado cálido en la apertura y el cierre, negro en las escenas del medio, una grotesca de peso medio y "multie" gigante como recurso de marca. Colores y tipografías pueden ajustarse cuando responda el equipo de Funke.
+
+**Colores**
+
+| Uso | Color | HEX |
+| --- | --- | --- |
+| Ancla de marca | Naranja Funke | #FD5609 |
+| Degradado | Rojo profundo | #C10801 |
+| Degradado | Naranja medio | #F16001 |
+| Degradado y luces | Crema | #D9C3AB |
+| Fondo de las escenas del medio | Negro | #000000 |
+| Textos principales | Blanco roto | #F9F9F9 |
+| Textos secundarios | Gris claro | #A7A7A7 |
+| Segundo tono de titulares y etiquetas | Gris | #646464 |
+| Teléfonos apagados y bordes | Gris oscuro | #333333 |
+
+**Degradado cálido** (apertura y cierre, de arriba hacia abajo): #0B0101 → #4A0300 → #C10801 → #F16001 → #FD5609 → #E9A46E → #D9C3AB, con una luz suave en el centro. Encima va un grano muy fino, al 10 %, en toda la página.
+
+**Tipografía (provisoria)**
+
+- **Titulares:** Geist Medium. Interletrado -4,5 % e interlineado 1. Grandes: 84 px en compu y 40 px en celular para la apertura.
+- **Texto:** Geist Regular, interlineado 1,4.
+- **Etiquetas y datos chicos:** Geist Mono, en mayúscula, 10 a 11 px.
+- **Tratamiento:** en la apertura el titular se degrada de blanco a transparente. En negro, los titulares van en dos tonos: lo importante en blanco y el resto en gris #646464.
+- **Fuentes de Funke disponibles:** en `assets/fuentes/funke/` están Owners XNarrow Black y Neue Haas Display (Roman, Medium y Bold). Si el equipo de Funke pide usarlas, Neue Haas reemplaza a Geist. Antes de publicar hay que confirmar la licencia web.
+
+**Recursos**
+
+- **"multie" gigante:** semitransparente, detrás del teléfono en la apertura, asomando abajo en el cierre y en el footer con el efecto de letras que se encienden.
+- **Datos editoriales:** etiquetas chicas en las esquinas de la apertura (servicio, sistema, redes, formato).
+- **Botones píldora:** de vidrio (blanco al 14 % con desenfoque) en el encabezado; negro sólido para la acción principal; contorno blanco para la secundaria.
+- **Botón redondo** para bajar, solo en compu.
+- **Teléfono:** negro, sin bordes de color, con contenido real en pantalla.
+- **Teléfonos de fondo:** desparramados. Los apagados casi no se ven; los encendidos muestran un video con un halo naranja.
+- **Embudo:** grande y de línea, transparente, con pocos videos grandes.
+
+**No va:** estrellas, indicadores de avance, grillas rígidas que llenen la pantalla, bordes naranjas en el teléfono.
+
+**Pantallas de la dirección A** (apertura, embudo y cierre, en celular y compu): abrir `diseno/direccion-A.html` en el navegador. En la pantalla del teléfono va un creador hablando a cámara, no el micrófono provisorio.
+
+![Dirección A — apertura, celular y compu](diseno/capturas/dirA-apertura.jpg)
+
+![Dirección A — embudo, celular y compu](diseno/capturas/dirA-embudo.jpg)
+
+![Dirección A — cierre, celular y compu](diseno/capturas/dirA-cierre.jpg)
+
+## Referencias
+
+Cada referencia aporta algo puntual. No se copia ninguna entera.
+
+| Referencia | Qué tomar |
+| --- | --- |
+| Paleta naranja y negro (`referencias/01-paleta.png`) | El degradado de negro a rojo, naranja y crema; los grises por niveles; el blanco roto. |
+| Nebula, landing de app de música (`referencias/02-nebula.png`) | La apertura en color y el paso a negro; la palabra gigante detrás del teléfono; los titulares grandes en grotesca media; las frases en dos tonos; los datos chicos en las esquinas; los botones redondos. |
+| Footer con letras que se encienden (`referencias/03-footer-letras.mp4`) | El efecto del footer: palabra gigante casi invisible cuyas letras se encienden de a una. |
+| [funke.tools](https://funke.tools/) | La marca madre. Solo el arranque en naranja. |
+| Manual de marca de Funke (`referencias/funke-manual-de-marca.pdf`) | Naranja #FD5609, la firma "un producto de funke". Es referencia, no regla. |
+
+![Referencia de paleta](referencias/01-paleta.png)
+
+![Referencia Nebula](referencias/02-nebula.png)
+
+![Referencia del footer, una letra encendida](referencias/03-footer-letras-cuadro.png)
+
+## Assets
+
+Casi todo lo visual es provisorio. Lo que se hace con código queda final; lo que es imagen o video se reemplaza en la fase de assets finales.
+
+| Asset | Dónde va | Estado | En el repo / de dónde sale | Formato |
+| --- | --- | --- | --- | --- |
+| Logo de Multie | Encabezado, cierre, footer, palabra gigante | Final; falta confirmar la licencia de la fuente Getai | `assets/logo/` (blanco, negro, naranja, gris y editable) | SVG. Para el footer, separado en 6 letras |
+| Teléfono protagonista | Apertura | Se hace con código | Three.js | 3D en tiempo real |
+| Video en la pantalla del teléfono | Apertura | Provisorio | fal: nano-banana-2.1 y después un modelo de imagen a video | MP4 vertical, corto, en loop, liviano |
+| Teléfonos de fondo | Apertura, embudo, escala | Se hacen con código | Three.js o CSS. Referencia: `assets/provisorios/ph_on.png` y `ph_off.png` | — |
+| Videos cortos | Embudo, proceso, teléfonos encendidos | Provisorios | `assets/provisorios/videos-cortos/` (9). Finales: fal o material real con permiso | WebP o MP4 vertical |
+| Embudo | Embudo | Provisorio: vector de la dirección A (en `diseno/direccion-A.html`); versión anterior en `assets/provisorios/funnel.webp` | SVG a mano o 3D | SVG |
+| Tira de video largo | Proceso, paso 01 | Provisoria | `assets/provisorios/strip.jpg` | WebP horizontal |
+| Fuentes | Toda la página | Provisorias: Geist y Geist Mono (`assets/fuentes/geist/`, licencia libre). Las de Funke en `assets/fuentes/funke/` | A definir con Funke | WOFF2 |
+
+## Requisitos técnicos
+
+El stack es una propuesta. Si Agustín prefiere otro, se habla, siempre que se cumplan las reglas de comportamiento.
+
+- **Stack:** Next.js con TypeScript y Tailwind, Three.js (React Three Fiber) para el 3D, GSAP con ScrollTrigger para las animaciones con scroll. Publicación en Vercel.
+- **Sin suavizado de scroll:** no usar Lenis ni nada parecido. La animación sigue el scroll exacto.
+- **Celular primero:** se diseña en 390 px y se adapta a compu (1440 px). Se prueba siempre en un celular real.
+- **Velocidad:** la apertura tiene que cargar rápido en 4G. Imágenes en WebP o AVIF, videos comprimidos y cargados cuando se acercan a la pantalla.
+- **Plan B:** si el dispositivo no soporta 3D, se muestra una imagen del teléfono. Si el usuario pide reducir el movimiento, las escenas se muestran quietas.
+- **Formulario:** el mail llega a una casilla a definir. WhatsApp abre un chat con un mensaje ya escrito.
+- **Básicos:** SEO (título, descripción, imagen para compartir) y analítica a definir.
+- **Herramientas de IA:** Claude Code con Opus 5.5 para el día a día y Fable 5.2 para las escenas complejas. Skills: GSAP, Impeccable, frontend-design. Si se usa taste-skill, que respete esta dirección visual y no busque fotos de bancos públicos.
+
+## Cómo trabajamos
+
+Agustín construye y Cotu aprueba todo lo que se ve. Para eso, lo visual vive en archivos separados de la lógica.
+
+- **Repo:** privado, a nombre de Cotu (o de Funke), con Agustín como colaborador. La rama principal está protegida: nada entra sin aprobación.
+- **Archivos de Cotu:** colores y tipografías (tokens de diseño), textos y assets van en archivos propios, marcados en `.github/CODEOWNERS` para que todo cambio ahí necesite el visto bueno de Cotu.
+- **Revisión:** cada cambio va en una rama con su link de prueba en Vercel. Cotu lo mira en el celular y comenta sobre la página.
+- **Orden de trabajo:**
+  1. Esqueleto con todos los textos, sin animaciones.
+  2. Apertura.
+  3. Embudo.
+  4. Proceso.
+  5. Escala.
+  6. Cierre y footer.
+  7. Assets finales.
+  8. Pulido: velocidad, SEO, dominio.
+- **Cada escena se aprueba** en el celular antes de pasar a la siguiente.
+
+## Pendientes y links
+
+Nada de esto frena el arranque. Se resuelve a medida que se llega a cada parte.
+
+- [ ] Tipografías oficiales y licencias web (consultado con el equipo de Funke).
+- [ ] Licencia de la fuente Getai del logo.
+- [ ] Dónde va "Las cuentas son nuestras".
+- [ ] Vista de la plataforma en el paso 04 del proceso.
+- [ ] Modelo de video para los assets finales.
+- [ ] Mail y número de WhatsApp reales.
+- [ ] Dominio.
+- [ ] Zona de abajo (para quién, apoyo creativo, plataforma, preguntas frecuentes): en pausa.
+
+**Links**
+
+- Prototipo navegable: `diseno/prototipo.html` (también en https://claude.ai/artifact/W1fkqfv7huwwHpbvo9vL9U). Ritmo y comportamiento de las escenas. No refleja los últimos cambios de esta biblia; si no coinciden, manda la biblia.
+- Dirección visual A: `diseno/direccion-A.html`. Cómo se ve.
+- Versión editable de esta biblia (con comentarios): https://claude.ai/artifact/D8AmD3VqzrJ7fVBVUdzime
