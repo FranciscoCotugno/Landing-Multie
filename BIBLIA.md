@@ -298,7 +298,7 @@ El stack es una propuesta. Si Agustín prefiere otro, se habla, siempre que se c
 Agustín construye y Cotu aprueba todo lo que se ve. Para eso, lo visual vive en archivos separados de la lógica.
 
 - **Repo:** privado, a nombre de Cotu (o de Funke), con Agustín como colaborador. La rama principal está protegida: nada entra sin aprobación.
-- **Archivos de Cotu:** colores y tipografías (tokens de diseño), textos y assets van en archivos propios, marcados en `.github/CODEOWNERS` para que todo cambio ahí necesite el visto bueno de Cotu.
+- **Archivos de Cotu:** colores y tipografías (tokens de diseño), textos y assets van en archivos propios, separados de la lógica. Todo cambio ahí lo aprueba Cotu.
 - **Revisión:** cada cambio va en una rama con su link de prueba en Vercel. Cotu lo mira en el celular y comenta sobre la página.
 - **Orden de trabajo:**
   1. Esqueleto con todos los textos, sin animaciones.

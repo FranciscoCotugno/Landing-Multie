@@ -1,9 +1,0 @@
-# Todo cambio en estos archivos necesita la aprobación de Cotu.
-# Reemplazar USUARIO_COTU por su usuario de GitHub al crear el repo.
-/BIBLIA.md            @USUARIO_COTU
-/assets/              @USUARIO_COTU
-/referencias/         @USUARIO_COTU
-/diseno/              @USUARIO_COTU
-# Cuando exista el código, sumar acá los tokens de diseño y los textos, por ejemplo:
-# /src/styles/tokens.*  @USUARIO_COTU
-# /src/content/         @USUARIO_COTU
