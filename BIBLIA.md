@@ -73,7 +73,7 @@ Cada escena queda fija en pantalla mientras se scrollea, y el scroll hace avanza
 - **Sin inercia:** la animación sigue al scroll exacto, sin suavizado ni rebote. Tampoco hay indicadores de avance: ni barras, ni "paso 1/4", ni nada parecido.
 - **Textos:** aparecen y desaparecen con un fundido corto en el momento que marca cada escena. Nunca hay dos textos encima.
 - **Celular primero:** todo se diseña para 390 px de ancho y después se adapta a compu. Ningún objeto tapa un texto.
-- **Teléfonos:** muchos teléfonos desperdigados por la pantalla, sin patrón. Nada de grillas rígidas que la llenen.
+- **Teléfonos:** muchos teléfonos desperdigados por la pantalla, sin patrón, salvo en el embudo, donde van en una grilla ordenada (ver escena 2). Sin halo ni desenfoque.
 - **Fondo:** la apertura arranca en el degradado cálido, pasa a negro plano, sin estrellas, y el cierre vuelve al degradado.
 - **Encabezado fijo:** logo de Multie a la izquierda y botón Contacto a la derecha, que lleva al cierre. Se oculta en la escena de cierre.
 
@@ -86,7 +86,7 @@ Un teléfono en 3D sobre el degradado cálido muestra un video y, al bajar, resu
 **Lo que se ve al llegar**
 
 - Fondo con el degradado cálido y grano suave. Encabezado con el logo en blanco y el botón Contacto de vidrio.
-- Arriba: los datos editoriales chicos, la etiqueta "multie · edición y distribución con multicuentas", el titular grande a la izquierda y el párrafo (a la derecha en compu, debajo en celular). Detrás del teléfono, "multie" gigante y semitransparente.
+- Arriba: los cuatro datos editoriales chicos repartidos de lado a lado (servicio, sistema, redes, formato), la etiqueta "multie · edición y distribución con multicuentas", el titular grande a la izquierda y el párrafo (a la derecha en compu, debajo en celular). Detrás del teléfono, "multie" gigante y semitransparente.
 - Abajo: el teléfono protagonista, negro y metálico, girado casi de costado. En la pantalla corre un video de un creador hablando a cámara.
 - En compu, un botón redondo con una flecha para bajar.
 
@@ -105,26 +105,26 @@ Un teléfono en 3D sobre el degradado cálido muestra un video y, al bajar, resu
 
 ## Escena 2 — Embudo
 
-Un embudo transparente se llena de videos hasta saturarse y después los reparte entre muchos teléfonos que se van encendiendo. El embudo es el problema; los teléfonos son la solución. El embudo es grande y los videos también: pocos y grandes en vez de muchos y chicos, que además hace la página más liviana. Dura 6,2 pantallas. Textos: guion, punto 2.
+Un embudo transparente se llena de videos hasta saturarse y después los reparte entre muchos teléfonos que se van encendiendo. El embudo es el problema; los teléfonos son la solución. El embudo es grande y los videos también: pocos y grandes en vez de muchos y chicos, que además hace la página más liviana. Dura unas 4 pantallas: con 6,2 se sentía largo. Textos: guion, punto 2.
 
 **Lo que se ve al llegar**
 
 - Fondo negro.
 - Arriba: el titular "Una sola cuenta tiene un límite." y su párrafo.
 - Debajo del texto, el embudo transparente, vacío.
-- Abajo, muchos teléfonos apagados desperdigados, sin patrón.
+- Abajo del embudo, una grilla ordenada y simétrica de 20 teléfonos o más, apagados (por ejemplo 6 × 4 en compu y 4 × 5 en celular).
 
 **Al scrollear**
 
 - **0 a 44 %:** caen videos verticales desde arriba y el embudo se llena de a poco. A medida que sube el nivel, brilla más naranja.
 - **44 a 60 %:** el embudo está lleno y vibra: no da abasto.
 - **62 %:** cambia el texto. Etiqueta "multicuentas" y titular "Un sistema de teléfonos publicando a la vez.", con su párrafo.
-- **65 a 92 %:** el embudo se vacía. Cada video sale por el cuello, viaja a un teléfono y lo enciende con un brillo naranja, en orden salteado.
+- **65 a 92 %:** el embudo se vacía. Cada video sale por el cuello, viaja a un teléfono y lo enciende, en orden salteado. Sin halo ni desenfoque alrededor de los teléfonos.
 - **92 a 100 %:** todos los teléfonos encendidos.
 
 **Celular y compu**
 
-- El embudo siempre va arriba de los teléfonos y empieza debajo del texto, sin pisarlo.
+- El embudo siempre va arriba de los teléfonos, así tiene sentido que los videos caigan en ellos. En compu va arriba a la derecha, al lado del texto, como en la dirección A, para aprovechar el ancho. En celular, debajo del texto.
 
 ## Escena 3 — El proceso
 
@@ -186,7 +186,7 @@ Va entre la escala y el cierre. Es scroll normal, sin escenas fijas: acá se lee
   - Coaching: Tus ideas, contadas de muchas formas y en muchas cuentas.
   - Desarrollo personal: Esa reflexión que funciona, llegando a quien todavía no te escuchó.
   - Podcasts: El episodio entero, cortado en los momentos que más enganchan.
-- **El teléfono:** al lado de las etiquetas, un teléfono reproduce un clip real editado por Multie, del rubro elegido. Acá no van videos generados con IA: es la muestra del trabajo. Los clips los arma el equipo, con permiso del cliente. Hasta que estén, se usan los cortos provisorios.
+- **El teléfono:** al lado de las etiquetas, un solo teléfono (no un collage) reproduce un clip real editado por Multie, del rubro elegido. Acá no van videos generados con IA: es la muestra del trabajo. Es clave: cada persona tiene que encontrar su tipo de video. Los clips reales los arma el equipo, con permiso del cliente. Hasta tenerlos, va este cruce con los cortos del repo: Trading, Inversiones y Cripto → `cortos/01-trading`; Finanzas personales y Desarrollo personal → `cortos/02-finanzas`; Real estate → `cortos/03-real-estate`; Ecommerce → `cortos/04-ecommerce`; Negocios → `cortos/05-calle`; Coaching → `cortos/06-clase`; Podcasts → `apertura/creador`.
 - Línea chica: ¿Es un negocio sin cara visible? También funciona para tiendas online, inmobiliarias y academias.
 
 **B · La diferencia**
@@ -295,9 +295,9 @@ La base es la dirección A: un degradado cálido en la apertura y el cierre, neg
 **Tipografía**
 
 - **Titulares:** Neue Haas Display Medium, la tipografía de Funke. Interletrado -2 % e interlineado 1. Grandes: 84 px en compu y 40 px en celular para la apertura.
-- **Texto:** Neue Haas Display Roman, interlineado 1,4 e interletrado +1 %. Es un corte Display: en tamaños chicos necesita ese poquito de aire.
+- **Texto:** Neue Haas Display Roman, interlineado 1,4 e interletrado +1 %. Tamaño: 17 a 18 px en compu y 16 px en celular. Es un corte Display: en tamaños chicos necesita ese poquito de aire.
 - **Etiquetas y datos chicos:** Geist Mono, en mayúscula, 10 a 11 px.
-- **Tratamiento:** en la apertura el titular se degrada de blanco a transparente. En negro, los titulares van en dos tonos: lo importante en blanco y el resto en gris #646464.
+- **Tratamiento:** en la apertura el titular se degrada de blanco a transparente. En negro, los titulares van en dos tonos: lo importante en naranja #FD5609 y el resto en blanco (a probar).
 - **Archivos:** `assets/fuentes/funke/` (TTF y WOFF2 para la web). Licencia: la tiene Funke.
 
 **Recursos**
@@ -307,8 +307,8 @@ La base es la dirección A: un degradado cálido en la apertura y el cierre, neg
 - **Botones píldora:** de vidrio (blanco al 14 % con desenfoque) en el encabezado; negro sólido para la acción principal; contorno blanco para la secundaria.
 - **Botón redondo** para bajar, solo en compu.
 - **Teléfono:** negro, sin bordes de color, con contenido real en pantalla.
-- **Teléfonos de fondo:** desparramados. Los apagados casi no se ven; los encendidos muestran un video con un halo naranja.
-- **Embudo:** grande y de línea, transparente, con pocos videos grandes.
+- **Teléfonos de fondo:** desparramados en la apertura y ordenados en el embudo. Los apagados casi no se ven; los encendidos muestran su video, sin halo.
+- **Embudo:** grande y de línea, transparente, con pocos videos grandes. Nada de naranja sólido: solo el contorno con luz naranja.
 
 **No va:** estrellas, indicadores de avance, grillas rígidas que llenen la pantalla, bordes naranjas en el teléfono.
 
