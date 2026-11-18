@@ -5,7 +5,7 @@ La fuente de verdad es `BIBLIA.md`. Leela antes de proponer o cambiar cualquier 
 ## Reglas que no se rompen
 
 - **Textos:** van tal cual están en el guion de la biblia. No se reescriben ni se acortan sin aprobación de Cotu.
-- **Palabras:** "multicuentas", alternada con "teléfonos propios" o "teléfonos reales". Nunca "granja", "no son bots", "no prometemos resultados" ni precios. No se nombran clientes.
+- **Palabras:** "multicuentas", alternada con "teléfonos propios" o "teléfonos reales". Nunca "granja" ni precios. Bots y garantías se mencionan solo en las preguntas frecuentes, con las respuestas aprobadas. No se nombran clientes.
 - **Scroll:** sin inercia ni suavizado (nada de Lenis). La animación sigue el scroll exacto.
 - **Sin indicadores de avance:** ni barras de progreso, ni "paso 1/4", ni contadores de pasos.
 - **Fondo:** degradado cálido en la apertura y el cierre, negro plano en el medio. Sin estrellas.
