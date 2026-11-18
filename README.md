@@ -13,12 +13,12 @@ Landing de Multie, un producto de Funke. Este repo arranca con todo lo necesario
 | `referencias/` | Paleta, Nebula, la grabación del efecto del footer y el manual de marca de Funke. |
 | `diseno/` | `direccion-A.html` (cómo se ve), `prototipo.html` (cómo se mueve) y capturas. Se abren con doble clic en el navegador. |
 | `assets/logo/` | Logo de Multie en blanco, negro, naranja y gris, la versión editable y la fuente del logo. |
-| `assets/fuentes/` | Geist y Geist Mono (provisorias, licencia libre) y las fuentes de Funke: Owners XNarrow y Neue Haas Display. |
+| `assets/fuentes/` | Geist y Geist Mono (las de la web, licencia libre) y las fuentes de Funke de referencia: Owners XNarrow y Neue Haas Display. |
 | `assets/provisorios/` | Videos cortos de prueba, embudo, tira de video y teléfonos. Se reemplazan por los finales. |
 
 ## Antes de publicar
 
-- Las fuentes de Funke y la del logo (Getai) son para uso interno. Antes de ponerlas en la web hay que confirmar la licencia web.
+- La fuente del logo (Getai) y las de Funke son de uso interno. La web usa Geist, que es libre.
 - Mail y WhatsApp reales, y dominio.
 
 ## Links

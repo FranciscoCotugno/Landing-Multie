@@ -274,7 +274,7 @@ Al pie de la página va la palabra "multie" enorme, ocupando todo el ancho y cor
 
 ## Dirección visual
 
-La base es la dirección A: un degradado cálido en la apertura y el cierre, negro en las escenas del medio, una grotesca de peso medio y "multie" gigante como recurso de marca. Colores y tipografías pueden ajustarse cuando responda el equipo de Funke.
+La base es la dirección A: un degradado cálido en la apertura y el cierre, negro en las escenas del medio, una grotesca de peso medio y "multie" gigante como recurso de marca. Es la dirección final.
 
 **Colores**
 
@@ -292,13 +292,13 @@ La base es la dirección A: un degradado cálido en la apertura y el cierre, neg
 
 **Degradado cálido** (apertura y cierre, de arriba hacia abajo): #0B0101 → #4A0300 → #C10801 → #F16001 → #FD5609 → #E9A46E → #D9C3AB, con una luz suave en el centro. Encima va un grano muy fino, al 10 %, en toda la página.
 
-**Tipografía (provisoria)**
+**Tipografía**
 
 - **Titulares:** Geist Medium. Interletrado -4,5 % e interlineado 1. Grandes: 84 px en compu y 40 px en celular para la apertura.
 - **Texto:** Geist Regular, interlineado 1,4.
 - **Etiquetas y datos chicos:** Geist Mono, en mayúscula, 10 a 11 px.
 - **Tratamiento:** en la apertura el titular se degrada de blanco a transparente. En negro, los titulares van en dos tonos: lo importante en blanco y el resto en gris #646464.
-- **Fuentes de Funke disponibles:** en `assets/fuentes/funke/` están Owners XNarrow Black y Neue Haas Display (Roman, Medium y Bold). Si el equipo de Funke pide usarlas, Neue Haas reemplaza a Geist. Antes de publicar hay que confirmar la licencia web.
+- **Fuentes de Funke:** en `assets/fuentes/funke/` están Owners XNarrow Black y Neue Haas Display, como referencia. La web usa Geist, que es libre. Si algún día se cambia a Neue Haas, antes hay que conseguir la licencia web.
 
 **Recursos**
 
@@ -351,7 +351,7 @@ Casi todo lo visual es provisorio. Lo que se hace con código queda final; lo qu
 | Videos cortos | Embudo, proceso, teléfonos encendidos | Provisorios | `assets/provisorios/videos-cortos/` (9). Finales: fal o material real con permiso | WebP o MP4 vertical |
 | Embudo | Embudo | Provisorio: vector de la dirección A (en `diseno/direccion-A.html`); versión anterior en `assets/provisorios/funnel.webp` | SVG a mano o 3D | SVG |
 | Tira de video largo | Proceso, paso 01 | Provisoria | `assets/provisorios/strip.jpg` | WebP horizontal |
-| Fuentes | Toda la página | Provisorias: Geist y Geist Mono (`assets/fuentes/geist/`, licencia libre). Las de Funke en `assets/fuentes/funke/` | A definir con Funke | WOFF2 |
+| Fuentes | Toda la página | Final: Geist y Geist Mono (`assets/fuentes/geist/`, licencia libre). Las de Funke, de referencia, en `assets/fuentes/funke/` | Geist | WOFF2 |
 
 ## Requisitos técnicos
 
@@ -388,7 +388,7 @@ Agustín construye y Cotu aprueba todo lo que se ve. Para eso, lo visual vive en
 
 Nada de esto frena el arranque. Se resuelve a medida que se llega a cada parte.
 
-- [ ] Tipografías oficiales y licencias web (consultado con el equipo de Funke).
+- [ ] Licencia web de Neue Haas, solo si algún día se reemplaza Geist.
 - [ ] Licencia de la fuente Getai del logo.
 - [ ] Vista de la plataforma en el paso 04 del proceso.
 - [x] Modelo de video para los assets finales: Wan 3.0 Prime.
