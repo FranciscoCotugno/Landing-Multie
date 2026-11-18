@@ -273,7 +273,7 @@ Casi todo lo visual es provisorio. Lo que se hace con código queda final; lo qu
 | --- | --- | --- | --- | --- |
 | Logo de Multie | Encabezado, cierre, footer, palabra gigante | Final; falta confirmar la licencia de la fuente Getai | `assets/logo/` (blanco, negro, naranja, gris y editable) | SVG. Para el footer, separado en 6 letras |
 | Teléfono protagonista | Apertura | Se hace con código | Three.js | 3D en tiempo real |
-| Video en la pantalla del teléfono | Apertura | Provisorio | fal: nano-banana-2.1 y después un modelo de imagen a video | MP4 vertical, corto, en loop, liviano |
+| Video en la pantalla del teléfono | Apertura | Elegido: creador hablando al micrófono, 5 s, 1080 × 1920 | fal: imagen con nano-banana-2.1 y video con Wan 3.0 Prime. Links en `assets/provisorios/LEEME.md` | MP4 vertical, corto, en loop, liviano |
 | Teléfonos de fondo | Apertura, embudo, escala | Se hacen con código | Three.js o CSS. Referencia: `assets/provisorios/ph_on.png` y `ph_off.png` | — |
 | Videos cortos | Embudo, proceso, teléfonos encendidos | Provisorios | `assets/provisorios/videos-cortos/` (9). Finales: fal o material real con permiso | WebP o MP4 vertical |
 | Embudo | Embudo | Provisorio: vector de la dirección A (en `diseno/direccion-A.html`); versión anterior en `assets/provisorios/funnel.webp` | SVG a mano o 3D | SVG |
@@ -291,7 +291,7 @@ El stack es una propuesta. Si Agustín prefiere otro, se habla, siempre que se c
 - **Plan B:** si el dispositivo no soporta 3D, se muestra una imagen del teléfono. Si el usuario pide reducir el movimiento, las escenas se muestran quietas.
 - **Formulario:** el mail llega a una casilla a definir. WhatsApp abre un chat con un mensaje ya escrito.
 - **Básicos:** SEO (título, descripción, imagen para compartir) y analítica a definir.
-- **Herramientas de IA:** Claude Code con Opus 5.5 para el día a día y Fable 5.2 para las escenas complejas. Skills: GSAP, Impeccable, frontend-design. Si se usa taste-skill, que respete esta dirección visual y no busque fotos de bancos públicos.
+- **Herramientas de IA:** Claude Code con Opus 5.5 para el día a día y Fable 5.2 para las escenas complejas. Para los videos de assets: Wan 3.0 Prime en fal (el mejor en calidad y precio de los tres que probamos). Skills: GSAP, Impeccable, frontend-design. Si se usa taste-skill, que respete esta dirección visual y no busque fotos de bancos públicos.
 
 ## Cómo trabajamos
 
@@ -319,7 +319,7 @@ Nada de esto frena el arranque. Se resuelve a medida que se llega a cada parte.
 - [ ] Licencia de la fuente Getai del logo.
 - [ ] Dónde va "Las cuentas son nuestras".
 - [ ] Vista de la plataforma en el paso 04 del proceso.
-- [ ] Modelo de video para los assets finales.
+- [x] Modelo de video para los assets finales: Wan 3.0 Prime.
 - [ ] Mail y número de WhatsApp reales.
 - [ ] Dominio.
 - [ ] Zona de abajo (para quién, apoyo creativo, plataforma, preguntas frecuentes): en pausa.
