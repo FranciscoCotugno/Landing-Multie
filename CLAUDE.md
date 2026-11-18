@@ -9,11 +9,13 @@ La fuente de verdad es `BIBLIA.md`. Leela antes de proponer o cambiar cualquier 
 - **Scroll:** sin inercia ni suavizado (nada de Lenis). La animación sigue el scroll exacto.
 - **Sin indicadores de avance:** ni barras de progreso, ni "paso 1/4", ni contadores de pasos.
 - **Fondo:** degradado cálido en la apertura y el cierre, negro plano en el medio. Sin estrellas.
-- **Teléfonos:** desperdigados, sin patrón. Nada de grillas rígidas que llenen la pantalla. El teléfono protagonista va sin bordes de color.
-- **Celular primero:** 390 px primero, después 1440 px. Ningún objeto tapa un texto.
+- **Teléfonos:** desperdigados, sin patrón, salvo en el embudo, donde van en una grilla ordenada de 20 o más. Sin halo ni desenfoque. El teléfono protagonista va sin bordes de color.
+- **Compu y celular:** la página tiene que funcionar en 1440 px y en 390 px. Ningún objeto tapa un texto. Por decisión de Cotu, ahora se cierra primero la versión de compu y celular se revisa después.
 - **Imágenes:** nada de fotos de bancos públicos. Los assets están en `assets/` o los pone Cotu.
 
 ## Cómo trabajar
+
+- Los pedidos de cambio están en `feedback/`, uno por revisión. Antes de seguir, leé el más reciente y aplicalo en su orden.
 
 - Una escena por vez, en el orden de la biblia. Antes de programar, mostrá el plan.
 - Al terminar cada cambio, sacá capturas en 390 px y 1440 px y revisalas.
