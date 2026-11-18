@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Multie — boceto embudo y proceso</title>
+<style>
+@font-face{font-family:NH;src:url(../../assets/fuentes/funke/NeueHaasDisplay-Roman.woff2) format("woff2");font-weight:400}
+@font-face{font-family:NH;src:url(../../assets/fuentes/funke/NeueHaasDisplay-Medium.woff2) format("woff2");font-weight:500}
+@font-face{font-family:GM;src:url(../../assets/fuentes/geist/GeistMono-Regular.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;color:#F9F9F9;font-family:NH,system-ui,sans-serif;letter-spacing:.012em;-webkit-font-smoothing:antialiased}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+.mono{font:400 11px/1.4 GM,monospace;text-transform:uppercase;letter-spacing:.08em;color:#8a8a8a}
+h2{font-weight:500;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,4.4vw,64px)}
+h2 em{font-style:normal;color:#FD5609}
+p.b{font-size:17px;line-height:1.4;color:#c9c9c9;max-width:440px}
+.intro,.outro{height:90vh;display:flex;flex-direction:column;justify-content:center;padding:0 6vw;gap:14px}
+.outro{height:70vh}
+.scene{position:relative}
+.stage{position:sticky;top:0;height:100vh;overflow:hidden}
+.txt{position:absolute;left:6vw;top:16vh;width:min(560px,40vw);z-index:5;transition:opacity .35s}
+.txt .mono{margin-bottom:14px}.txt p.b{margin-top:18px}
+/* teléfonos */
+.ph{position:absolute;border-radius:16%/8%;background:#0b0b0b;box-shadow:inset 0 0 0 1.5px #2e2e2e;overflow:hidden;will-change:transform}
+.ph img,.ph video{position:absolute;inset:5%;width:90%;height:90%;object-fit:cover;border-radius:12%/6%;transition:opacity .4s}
+.ph.off img{opacity:0}
+.card{position:absolute;border-radius:10px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12);will-change:transform}
+.hero{z-index:3}
+/* proceso */
+.vid{position:absolute;overflow:hidden;border-radius:14px;will-change:transform,width,height,left,top}
+.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.tl{position:absolute;height:6px;border-radius:3px;background:#262626}
+.tl i{position:absolute;top:-3px;height:12px;border-radius:3px;background:#FD5609;transform-origin:left;}
+.crop{position:absolute;border:2px solid #FD5609;border-radius:6px;pointer-events:none}
+.steps{position:absolute;left:6vw;bottom:9vh;display:flex;gap:28px;z-index:5}
+.steps div{opacity:.28;transition:opacity .3s;max-width:220px}
+.steps div.on{opacity:1}
+.steps b{display:block;font-weight:500;font-size:18px;margin:6px 0 6px}
+.steps span{font-size:14px;line-height:1.35;color:#bdbdbd}
+.toggle{position:fixed;right:18px;bottom:18px;z-index:50;border-radius:999px;background:#F9F9F9;color:#000;font:500 13px NH;padding:11px 16px;border:0;cursor:pointer}
+.hint{position:fixed;left:18px;bottom:18px;z-index:50}
+</style></head><body>
+<button class="toggle" id="tg">Inercia: activada</button>
+<div class="hint mono">Boceto · probalo en compu</div>
+
+<section class="intro">
+  <div class="mono">boceto · escenas 2 y 3</div>
+  <h2>Embudo nuevo<br><em>y proceso nuevo.</em></h2>
+  <p class="b">Bajá despacio. El botón de abajo a la derecha prende y apaga la inercia del scroll para comparar.</p>
+</section>
+
+<section class="scene" id="s1" style="height:320vh"><div class="stage" id="st1">
+  <div class="txt" id="t1a"><div class="mono">el límite</div><h2>Una sola cuenta<br><em>tiene un límite.</em></h2><p class="b">En redes, el alcance es cuestión de volumen. Nadie sabe qué video va a explotar, por eso hacen falta muchos.</p></div>
+  <div class="txt" id="t1b" style="opacity:0"><div class="mono">multicuentas</div><h2>Un sistema de teléfonos<br><em>publicando a la vez.</em></h2><p class="b">Cada teléfono maneja sus propias cuentas, con su propia conexión, y todas publican al mismo tiempo, todos los días.</p></div>
+</div></section>
+
+<section class="scene" id="s2" style="height:300vh"><div class="stage" id="st2">
+  <div class="txt" style="top:12vh"><div class="mono">el proceso</div></div>
+  <div class="steps" id="steps">
+    <div><div class="mono">01</div><b>Se envía el material.</b><span>Un archivo o un link de YouTube.</span></div>
+    <div><div class="mono">02</div><b>Elegimos y editamos.</b><span>Los momentos que se sostienen solos, en vertical.</span></div>
+    <div><div class="mono">03</div><b>Repartimos los videos.</b><span>Cada corto, a una cuenta distinta.</span></div>
+    <div><div class="mono">04</div><b>Se publica y se mide.</b><span>Todos los días, en vivo en la plataforma.</span></div>
+  </div>
+</div></section>
+
+<section class="outro">
+  <div class="mono">fin del boceto</div>
+  <h2>¿Cómo se siente<br><em>con y sin inercia?</em></h2>
+</section>
+
+<script src="lenis.min.js"></script>
+<script>
+const $=s=>document.querySelector(s),cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),seg=(p,a,b)=>cl((p-a)/(b-a)),ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,lerp=(a,b,t)=>a+(b-a)*t;
+const POS=['01-trading','02-finanzas','03-real-estate','04-ecommerce','05-calle','06-clase'];
+let W=innerWidth,H=innerHeight;
+/* ---------- escena 1: cuello de botella ---------- */
+const st1=$('#st1'),N=24,Q=14;let phones=[],queue=[],hero;
+function mkPhone(i,isHero){const d=document.createElement('div');d.className='ph'+(isHero?' hero':' off');
+ if(isHero){d.innerHTML='<video src="../../assets/apertura/creador.mp4" autoplay muted loop playsinline></video>'}else{d.innerHTML=`<img src="../../assets/cortos/${POS[i%6]}.jpg" alt="">`}
+ st1.appendChild(d);return d}
+hero=mkPhone(0,true);for(let i=0;i<N;i++)phones.push(mkPhone(i));
+for(let i=0;i<Q;i++){const c=document.createElement('div');c.className='card';c.style.backgroundImage=`url(../../assets/cortos/${POS[(i+2)%6]}.jpg)`;st1.appendChild(c);queue.push(c)}
+function grid(){// grilla ordenada a la derecha, debajo de nada: ocupa el área libre
+ const cols=W>900?8:4,rows=Math.ceil(N/cols),areaL=W>900?W*.47:W*.08,areaR=W*.95,areaT=H*.14,areaB=H*.9;
+ const gw=(areaR-areaL)/cols,gh=(areaB-areaT)/rows,pw=Math.min(gw*.78,gh*.78/2.05),ph=pw*2.05;
+ return Array.from({length:N},(_,i)=>{const c=i%cols,r=Math.floor(i/cols);return{x:areaL+gw*c+(gw-pw)/2,y:areaT+gh*r+(gh-ph)/2,w:pw,h:ph}})}
+function scene1(p){
+ const hw=Math.min(W*.17,240),hh=hw*2.05,hx=W*.6-hw/2,hy=H*.5-hh/2,G=grid();
+ const qIn=seg(p,.05,.45),split=ease(seg(p,.5,.78)),fly=seg(p,.58,.92),swap=p>.48;
+ $('#t1a').style.opacity=swap?0:1;$('#t1b').style.opacity=swap?1:0;
+ // teléfono protagonista: se achica y se vuelve uno más de la grilla
+ const g0=G[Math.floor(N/2)];
+ const x=lerp(hx,g0.x,split),y=lerp(hy,g0.y,split),w=lerp(hw,g0.w,split),h=lerp(hh,g0.h,split);
+ hero.style.cssText=`left:${x}px;top:${y}px;width:${w}px;height:${h}px`;
+ // los demás salen del protagonista
+ phones.forEach((d,i)=>{const g=G[i],t=ease(cl(split*1.25-(i%8)*.03));
+  d.style.cssText=`left:${lerp(hx+hw*.1,g.x,t)}px;top:${lerp(hy+hh*.1,g.y,t)}px;width:${lerp(hw*.8,g.w,t)}px;height:${lerp(hh*.8,g.h,t)}px;opacity:${split>0?cl(t*3):0}`;
+  d.classList.toggle('off',fly<(i%N)/N*.9+.05)});
+ // cola: videos que esperan entrar al teléfono, en fila a la izquierda
+ const cw=Math.min(W*.06,86),chh=cw*1.75;
+ queue.forEach((c,i)=>{const arrive=cl(qIn*Q-i);// van llegando de a uno
+  const slotX=hx+hw+18+i*(cw*.3),slotY=hy+hh-chh-(i%2)*10,fromX=W+cw;
+  let X=lerp(fromX,slotX,ease(arrive)),Y=slotY,S=1,O=arrive>0?1:0;
+  // al dividirse: cada video vuela a un teléfono
+  const k=cl(fly*1.3-i*.025),tg=G[(i*5+3)%N];
+  if(k>0){X=lerp(X,tg.x+tg.w*.1,ease(k));Y=lerp(Y,tg.y+tg.h*.1,ease(k));S=lerp(1,tg.w*.8/cw,ease(k));O=1-cl((k-.85)/.15)}
+  c.style.cssText=`background-image:url(../../assets/cortos/${POS[(i+2)%6]}.jpg);left:0;top:0;width:${cw}px;height:${chh}px;transform:translate(${X}px,${Y}px) scale(${S}) rotate(${(1-ease(k))*((i%3)-1)*4}deg);transform-origin:0 0;opacity:${O};z-index:${4+i}`;
+ });
+}
+/* ---------- escena 2: proceso ---------- */
+const st2=$('#st2');const main=document.createElement('div');main.className='vid';main.innerHTML='<video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline></video>';st2.appendChild(main);
+const tl=document.createElement('div');tl.className='tl';st2.appendChild(tl);
+const MARKS=[[.08,.18],[.3,.4],[.52,.62],[.76,.86]];const marks=MARKS.map(([a,b])=>{const i=document.createElement('i');i.style.left=a*100+'%';i.style.width=(b-a)*100+'%';tl.appendChild(i);return i});
+const crop=document.createElement('div');crop.className='crop';st2.appendChild(crop);
+const OPOS=['30%','72%','28%','74%'];
+const cuts=OPOS.map((op,i)=>{const d=document.createElement('div');d.className='vid';d.innerHTML=`<video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline style="object-position:${op} 50%"></video>`;st2.appendChild(d);return d});
+const ph2=OPOS.map(()=>{const d=document.createElement('div');d.className='ph';d.style.opacity=0;st2.insertBefore(d,cuts[0]);return d});
+function scene2(p){
+ const mw=Math.min(W*.5,780),mh=mw*9/16,mx=W*.5-mw/2,my=H*.16;
+ const s=p<.25?0:p<.5?1:p<.75?2:3;[...$('#steps').children].forEach((d,i)=>d.classList.toggle('on',i===s));
+ const shrink=ease(seg(p,.45,.6));const MW=lerp(mw,mw*.62,shrink),MH=MW*9/16,MX=lerp(mx,W*.5-mw*.31,shrink),MY=lerp(my,H*.1,shrink);
+ main.style.cssText=`left:${MX}px;top:${MY}px;width:${MW}px;height:${MH}px;opacity:${lerp(1,.35,shrink)}`;
+ tl.style.cssText=`left:${MX}px;top:${MY+MH+14}px;width:${MW}px;opacity:${seg(p,.18,.25)}`;
+ marks.forEach((m,i)=>m.style.transform=`scaleX(${ease(seg(p,.25+i*.05,.32+i*.05))})`);
+ // recuadro vertical que recorta el cuadro
+ const cw=MH*9/16;crop.style.cssText=`left:${MX+MW*.3-cw/2}px;top:${MY}px;width:${cw}px;height:${MH}px;opacity:${seg(p,.3,.36)*(1-seg(p,.46,.5))}`;
+ // phones row
+ const pw=Math.min(W*.085,120),phh=pw*2.05,gap=pw*.55,rowW=4*pw+3*gap,rx=W*.5-rowW/2,ry=H*.42;
+ cuts.forEach((d,i)=>{const out=ease(seg(p,.46+i*.03,.62+i*.03)),into=ease(seg(p,.7+i*.025,.86+i*.025));
+  // nace dentro del cuadro (16:9 recortado), se angosta a 9:16 y baja al teléfono
+  const sx=MX+MW*(i%2?.72:.3)-cw/2,sy=MY,sw=cw,sh=MH;
+  const fx=rx+i*(pw+gap)+pw*.05,fy=ry+phh*.05,fw=pw*.9,fh=phh*.9;
+  const midx=lerp(sx,rx+i*(pw+gap)-pw*.15,out),midy=lerp(sy,ry-phh*.25,out),midw=lerp(sw,pw*1.2,out),midh=lerp(sh,pw*1.2*16/9,out);
+  d.style.cssText=`left:${lerp(midx,fx,into)}px;top:${lerp(midy,fy,into)}px;width:${lerp(midw,fw,into)}px;height:${lerp(midh,fh,into)}px;opacity:${out>0?1:0};border-radius:${lerp(6,12,into)}px;z-index:4`;
+  ph2[i].style.cssText=`left:${rx+i*(pw+gap)}px;top:${ry}px;width:${pw}px;height:${phh}px;opacity:${seg(p,.62,.7)};box-shadow:inset 0 0 0 1.5px ${p>.88?'#FD5609':'#2e2e2e'}`;
+ });
+}
+/* ---------- scroll ---------- */
+function prog(el){const r=el.getBoundingClientRect();return cl(-r.top/(r.height-H))}
+function frame(){scene1(prog($('#s1')));scene2(prog($('#s2')))}
+let lenis=new Lenis({lerp:.09,smoothWheel:true});let on=true;
+function raf(t){if(on)lenis.raf(t);frame();requestAnimationFrame(raf)}requestAnimationFrame(raf);
+$('#tg').onclick=()=>{on=!on;if(on){lenis=new Lenis({lerp:.09,smoothWheel:true})}else{lenis.destroy()}$('#tg').textContent='Inercia: '+(on?'activada':'desactivada')};
+addEventListener('resize',()=>{W=innerWidth;H=innerHeight});
+</script></body></html>
