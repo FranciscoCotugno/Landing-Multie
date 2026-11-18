@@ -6,12 +6,12 @@ Todo lo necesario para construir la landing de Multie: qué es, qué dice, cómo
 
 ## Contexto y reglas
 
-Multie convierte videos largos en piezas cortas y las publica todos los días desde muchas cuentas propias, en teléfonos reales. Es un producto de Funke. La landing tiene un solo objetivo: que el visitante pida una propuesta por mail o por WhatsApp.
+Multie convierte videos largos en piezas cortas y las publica todos los días desde muchas cuentas a la vez, manejadas desde teléfonos reales. Es un producto de Funke. La landing tiene un solo objetivo: que el visitante pida una propuesta por mail o por WhatsApp.
 
 - **Para quién:** marcas personales y creadores con mucho material grabado (podcasts, clases, streams). Mercados: Argentina, el resto de Latinoamérica y España.
 - **Tono:** serio, premium, directo y un poco provocador.
 - **Palabra clave:** "multicuentas", alternada con "teléfonos propios" o "teléfonos reales".
-- **Nunca:** "granja", "no son bots", "no prometemos resultados" ni precios.
+- **Nunca:** "granja" ni precios. Bots y garantías se tocan solo en las preguntas frecuentes, con las respuestas aprobadas.
 - **Clientes:** no se nombra a ninguno sin permiso.
 - **Los teléfonos reales:** no se muestran filmados. Se representan con diseño y 3D.
 - **Marca:** el manual de Funke es referencia, no regla. Multie tiene logo propio y Funke aparece solo como firma: "un producto de funke".
@@ -57,11 +57,11 @@ Textos aprobados por Cotu. Van tal cual: si alguno no entra en el diseño, se co
 - Campo de mail con el botón **Pedir una propuesta** y el botón **Hablar por WhatsApp**
 - Firma: un producto de funke
 
-**Fuera de la secuencia (ubicación a definir)**
+**Zona de abajo, bloque B · La diferencia**
 
 - Etiqueta: la diferencia
-- Titular: **Las cuentas son nuestras.**
-- Texto: Las agencias de clipping reparten el video entre una red de cuentas ajenas y le pagan a cada una por vista. Quién lo sube, cuándo y cómo se ve queda fuera de su control. En Multie cada cuenta es propia: nace en uno de nuestros teléfonos, la manejamos nosotros y decidimos qué publica. Por eso el contenido sale con el tono y el cuidado que la marca necesita.
+- Titular: **Las cuentas son tuyas.**
+- Texto: Las agencias de clipping reparten el video entre una red de cuentas ajenas y le pagan a cada una por vista. Quién lo sube, cuándo y cómo se ve queda fuera de su control. En Multie las cuentas son tuyas, y las manejamos nosotros desde teléfonos propios: decidimos qué publica cada una, cuándo y cómo. Por eso el contenido sale con el tono y el cuidado que tu marca necesita, y la audiencia que se forma queda de tu lado.
 
 El trato mezcla el "tu" neutro ("Imagina", "tu medida") con el voseo del cierre ("Tenés"). Es una decisión de Cotu: no se unifica.
 
@@ -166,6 +166,83 @@ Los teléfonos crecen de 5 a 100 mientras un contador grande marca la cantidad d
 
 **Redes:** se publica en TikTok, Instagram y Facebook.
 
+## Zona de abajo
+
+Va entre la escala y el cierre. Es scroll normal, sin escenas fijas: acá se lee. Fondo negro, con los mismos recursos visuales que el resto. Son cinco bloques, en este orden.
+
+**A · Para quién**
+
+- Etiqueta: para quién
+- Titular: **Para marcas personales.**
+- Texto: Para quien ya graba y tiene algo para decir. Elegí tu rubro:
+- Etiquetas que se tocan. Con cada una cambia la línea de abajo y el video del teléfono:
+  - Trading: Tu lectura del mercado, en el feed de traders que todavía no te siguen.
+  - Inversiones: Las ideas que hoy explicás a pocos, frente a gente nueva todos los días.
+  - Finanzas personales: El consejo que le ordena el mes a alguien, justo en su feed.
+  - Cripto: La novedad del día, publicada mientras todavía es noticia.
+  - Negocios: Una charla de una hora, partida en decenas de aprendizajes cortos.
+  - Real estate: Tus propiedades y tu criterio, a la vista de compradores nuevos.
+  - Ecommerce: Tu producto, frente a públicos que todavía no lo conocen.
+  - Coaching: Tus ideas, contadas de muchas formas y en muchas cuentas.
+  - Desarrollo personal: Esa reflexión que funciona, llegando a quien todavía no te escuchó.
+  - Podcasts: El episodio entero, cortado en los momentos que más enganchan.
+- **El teléfono:** al lado de las etiquetas, un teléfono reproduce un clip real editado por Multie, del rubro elegido. Acá no van videos generados con IA: es la muestra del trabajo. Los clips los arma el equipo, con permiso del cliente. Hasta que estén, se usan los cortos provisorios.
+- Línea chica: ¿Es un negocio sin cara visible? También funciona para tiendas online, inmobiliarias y academias.
+
+**B · La diferencia**
+
+- Etiqueta: la diferencia
+- Titular: **Las cuentas son tuyas.**
+- Texto: el del guion, sin cambios.
+- Si se suma una imagen, que sea simple: cuentas ajenas dispersas contra los teléfonos propios ordenados.
+
+**C · Cómo se trabaja**
+
+- Etiqueta: cómo se trabaja
+- Titular: **Dos formas de trabajar.**
+- Texto: Las dos están incluidas. Se elige según cuánto apoyo necesite el proyecto.
+- **Con el contenido resuelto.** Ya sabés qué querés decir. Nos mandás el material, lo editamos y lo publicamos desde las cuentas.
+- **Con estrategia.** Arrancamos por el análisis del proyecto. Definimos qué temas se cuentan, cómo se habla y qué se muestra. Después editamos y publicamos siguiendo ese plan.
+
+**D · La plataforma**
+
+- Etiqueta: la plataforma
+- Titular: **Visibilidad de verdad.**
+- Texto: Todo lo que se publica se ve en un solo lugar: qué cuenta lo publicó, cuándo y cómo rindió.
+- Lo define Agustín según lo que la plataforma muestra hoy. Va con una captura o una maqueta.
+
+**E · Preguntas frecuentes**
+
+- Etiqueta: preguntas frecuentes
+- Titular: **Antes de hablar.**
+- Agrupadas en cuatro temas. Se abren de a una, como un acordeón.
+
+*El servicio*
+
+- **¿Qué hace Multie?** Convertimos tu material en videos cortos y los publicamos todos los días desde muchas cuentas a la vez, en TikTok, Instagram y Facebook.
+- **¿En qué se diferencia de una agencia?** Una agencia maneja tus cuentas. Multie publica tu contenido en muchas cuentas al mismo tiempo: son tuyas y las manejamos nosotros. Y a diferencia de las agencias de clipping, esas cuentas no son de terceros que cobran por vista.
+- **¿Usan bots?** No. Cada video se sube desde un teléfono real, por una persona.
+- **¿En qué redes publican?** TikTok, Instagram y Facebook. Las redes se definen según el plan.
+
+*El contenido*
+
+- **¿Quién hace los videos?** El equipo de Multie, con tu material: videos largos, fotos, productos o preguntas que respondés a cámara.
+- **¿Tengo que grabar?** Depende del caso. Muchas veces alcanza con lo que ya tenés. Si no, con una sesión por mes.
+- **¿Puedo aprobar antes de que se publique?** Sí. Aprobás las primeras tandas y después se publica con el criterio que acordamos.
+- **¿Qué pasa con los derechos del material?** Publicamos solo contenido del que tenés los derechos. Si hay material de terceros, se revisa antes.
+
+*Las cuentas*
+
+- **¿Las cuentas son mías?** Sí, son tuyas. Nosotros las manejamos desde nuestros teléfonos y decidimos qué publica cada una, pero la cuenta y su audiencia son tuyas.
+- **¿Cuántas cuentas publican mi contenido?** Depende del plan y de la cantidad de videos. Se reparte para que ninguna cuenta se sature.
+- **¿Qué pasa si se cae una cuenta?** La reemplazamos por otra, sin costo y sin cortar la publicación.
+
+*Resultados*
+
+- **¿Cómo veo los resultados?** En la plataforma: cada video, cada cuenta, vistas e interacciones.
+- **¿Garantizan vistas?** No garantizamos vistas. Garantizamos la cantidad de videos publicados que incluye tu plan.
+- **¿Cuándo se ven los resultados?** Las primeras métricas aparecen en la primera semana. Los resultados se leen mes a mes.
+
 ## Escena 5 — Cierre
 
 Una pantalla con el degradado cálido, quieta y simple, con una sola acción: pedir una propuesta. Es una pantalla normal, sin animación de scroll. Textos: guion, punto 5.
@@ -194,10 +271,6 @@ Al pie de la página va la palabra "multie" enorme, ocupando todo el ancho y cor
 - **En celular:** como no hay mouse, la letra se enciende al tocarla. Cuando el footer entra en pantalla, además, las letras se encienden solas una por una, despacio, una sola vez.
 - **Arriba de la palabra:** una frase corta grande, los links (Contacto, WhatsApp, Instagram, TikTok) y la firma "un producto de funke" chica, en la tipografía de detalles.
 - **Para construirlo:** el logo de Multie hoy es un solo trazo (`assets/logo/`). Hay que separarlo en sus seis letras (m, u, l, t, i, e) para que cada una se pueda encender por separado.
-
-## Fuera de esta secuencia
-
-- **Las cuentas son nuestras:** la diferencia con las agencias de clipping queda afuera de las escenas. Va en otra parte de la página, a definir.
 
 ## Dirección visual
 
@@ -317,12 +390,11 @@ Nada de esto frena el arranque. Se resuelve a medida que se llega a cada parte.
 
 - [ ] Tipografías oficiales y licencias web (consultado con el equipo de Funke).
 - [ ] Licencia de la fuente Getai del logo.
-- [ ] Dónde va "Las cuentas son nuestras".
 - [ ] Vista de la plataforma en el paso 04 del proceso.
 - [x] Modelo de video para los assets finales: Wan 3.0 Prime.
 - [ ] Mail y número de WhatsApp reales.
 - [ ] Dominio.
-- [ ] Zona de abajo (para quién, apoyo creativo, plataforma, preguntas frecuentes): en pausa.
+- [ ] Clips reales editados por Multie para el teléfono de "Para quién", uno por rubro, con permiso del cliente. Los arma el equipo; hasta entonces, el teléfono usa los cortos provisorios.
 
 **Links**
 
