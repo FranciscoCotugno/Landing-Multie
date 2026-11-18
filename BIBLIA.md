@@ -128,7 +128,7 @@ Un embudo transparente se llena de videos hasta saturarse y después los reparte
 
 ## Escena 3 — El proceso
 
-El scroll vertical mueve cuatro paneles de costado, uno por pantalla, y cada uno muestra un paso con una animación propia. Dura 5,2 pantallas. Textos: guion, punto 3.
+El scroll vertical mueve cuatro paneles de costado, uno por pantalla, y cada uno muestra un paso con una animación propia. Es la parte que muestra cómo un video largo se parte en cortos: todo sale del mismo episodio (`assets/proceso/episodio.mp4`). La tira del paso 01 son cuadros de ese video, y los cortos de los pasos 02 y 03 son recortes verticales del mismo episodio, para que se entienda que salen de ahí. Dura 5,2 pantallas. Textos: guion, punto 3.
 
 **Lo que se ve siempre**
 
