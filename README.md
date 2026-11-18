@@ -12,7 +12,7 @@ Landing de Multie, un producto de Funke. Este repo arranca con todo lo necesario
 | `CLAUDE.md` | Reglas del proyecto para Claude Code. Las lee solo al abrir el repo. |
 | `referencias/` | Paleta, Nebula, la grabación del efecto del footer y el manual de marca de Funke. |
 | `diseno/` | `direccion-A.html` (cómo se ve), `prototipo.html` (cómo se mueve) y capturas. Se abren con doble clic en el navegador. |
-| `assets/logo/` | Logo de Multie en blanco, negro, naranja y gris, la versión editable y la fuente del logo. |
+| `assets/logo/` | Logo de Multie en blanco, negro, naranja y gris, la versión editable, la fuente del logo y `multie-letras.svg` (separado en 6 letras para el footer). |
 | `assets/fuentes/` | Neue Haas Display, la de la web (licencia de Funke), Owners XNarrow y Geist Mono para etiquetas. |
 | `assets/apertura/`, `assets/cortos/`, `assets/proceso/` | Videos finales comprimidos para la web, con su portada. |
 | `assets/provisorios/` | Material de prueba del prototipo. |

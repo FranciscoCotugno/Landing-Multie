@@ -270,7 +270,7 @@ Al pie de la página va la palabra "multie" enorme, ocupando todo el ancho y cor
 - **En compu:** al pasar el mouse sobre una letra, se enciende en naranja con un fundido suave (alrededor de 0,4 s). Al salir el mouse, vuelve a su color con el mismo fundido. Se ilumina una letra por vez.
 - **En celular:** como no hay mouse, la letra se enciende al tocarla. Cuando el footer entra en pantalla, además, las letras se encienden solas una por una, despacio, una sola vez.
 - **Arriba de la palabra:** una frase corta grande, los links (Contacto, WhatsApp, Instagram, TikTok) y la firma "un producto de funke" chica, en la tipografía de detalles.
-- **Para construirlo:** el logo de Multie hoy es un solo trazo (`assets/logo/`). Hay que separarlo en sus seis letras (m, u, l, t, i, e) para que cada una se pueda encender por separado.
+- **Para construirlo:** usar `assets/logo/multie-letras.svg`. Es el logo separado en seis letras, cada una con su id (`m`, `u`, `l`, `t`, `i`, `e`). La i incluye el punto y la e su hueco. Cada letra toma el color de su `fill` en CSS, así que el efecto se hace con un `transition` sobre `fill`. Control visual: `diseno/capturas/logo-letras.png`.
 
 ## Dirección visual
 
