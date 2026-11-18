@@ -294,11 +294,11 @@ La base es la dirección A: un degradado cálido en la apertura y el cierre, neg
 
 **Tipografía**
 
-- **Titulares:** Geist Medium. Interletrado -4,5 % e interlineado 1. Grandes: 84 px en compu y 40 px en celular para la apertura.
-- **Texto:** Geist Regular, interlineado 1,4.
+- **Titulares:** Neue Haas Display Medium, la tipografía de Funke. Interletrado -2 % e interlineado 1. Grandes: 84 px en compu y 40 px en celular para la apertura.
+- **Texto:** Neue Haas Display Roman, interlineado 1,4 e interletrado +1 %. Es un corte Display: en tamaños chicos necesita ese poquito de aire.
 - **Etiquetas y datos chicos:** Geist Mono, en mayúscula, 10 a 11 px.
 - **Tratamiento:** en la apertura el titular se degrada de blanco a transparente. En negro, los titulares van en dos tonos: lo importante en blanco y el resto en gris #646464.
-- **Fuentes de Funke:** en `assets/fuentes/funke/` están Owners XNarrow Black y Neue Haas Display, como referencia. La web usa Geist, que es libre. Si algún día se cambia a Neue Haas, antes hay que conseguir la licencia web.
+- **Archivos:** `assets/fuentes/funke/` (TTF y WOFF2 para la web). Licencia: la tiene Funke.
 
 **Recursos**
 
@@ -351,7 +351,7 @@ Casi todo lo visual es provisorio. Lo que se hace con código queda final; lo qu
 | Videos cortos | Embudo, proceso, teléfonos encendidos | Finales: 6 rubros distintos (trading, finanzas, real estate, ecommerce, calle, clase) | `assets/cortos/` con portada `.jpg` cada uno. En los teléfonos chicos va solo la portada | MP4 vertical 720 × 1280, 5 s, sin audio |
 | Embudo | Embudo | Provisorio: vector de la dirección A (en `diseno/direccion-A.html`); versión anterior en `assets/provisorios/funnel.webp` | SVG a mano o 3D | SVG |
 | Episodio largo | Proceso, paso 01 (la tira se arma con cuadros) | Final | `assets/proceso/episodio.mp4` y `episodio.jpg` | MP4 horizontal 1280 × 720, 8 s, sin audio |
-| Fuentes | Toda la página | Final: Geist y Geist Mono (`assets/fuentes/geist/`, licencia libre). Las de Funke, de referencia, en `assets/fuentes/funke/` | Geist | WOFF2 |
+| Fuentes | Toda la página | Final: Neue Haas Display (licencia de Funke) en `assets/fuentes/funke/` y Geist Mono para etiquetas en `assets/fuentes/geist/` | Funke | WOFF2 |
 
 ## Requisitos técnicos
 
@@ -388,7 +388,6 @@ Agustín construye y Cotu aprueba todo lo que se ve. Para eso, lo visual vive en
 
 Nada de esto frena el arranque. Se resuelve a medida que se llega a cada parte.
 
-- [ ] Licencia web de Neue Haas, solo si algún día se reemplaza Geist.
 - [ ] Licencia de la fuente Getai del logo.
 - [ ] Vista de la plataforma en el paso 04 del proceso.
 - [x] Modelo de video para los assets finales: Wan 3.0 Prime.
