@@ -14,7 +14,8 @@ Landing de Multie, un producto de Funke. Este repo arranca con todo lo necesario
 | `diseno/` | `direccion-A.html` (cómo se ve), `prototipo.html` (cómo se mueve) y capturas. Se abren con doble clic en el navegador. |
 | `assets/logo/` | Logo de Multie en blanco, negro, naranja y gris, la versión editable y la fuente del logo. |
 | `assets/fuentes/` | Geist y Geist Mono (las de la web, licencia libre) y las fuentes de Funke de referencia: Owners XNarrow y Neue Haas Display. |
-| `assets/provisorios/` | Videos cortos de prueba, embudo, tira de video y teléfonos. Se reemplazan por los finales. |
+| `assets/apertura/`, `assets/cortos/`, `assets/proceso/` | Videos finales comprimidos para la web, con su portada. |
+| `assets/provisorios/` | Material de prueba del prototipo. |
 
 ## Antes de publicar
 

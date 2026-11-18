@@ -346,11 +346,11 @@ Casi todo lo visual es provisorio. Lo que se hace con código queda final; lo qu
 | --- | --- | --- | --- | --- |
 | Logo de Multie | Encabezado, cierre, footer, palabra gigante | Final; falta confirmar la licencia de la fuente Getai | `assets/logo/` (blanco, negro, naranja, gris y editable) | SVG. Para el footer, separado en 6 letras |
 | Teléfono protagonista | Apertura | Se hace con código | Three.js | 3D en tiempo real |
-| Video en la pantalla del teléfono | Apertura | Elegido: creador hablando al micrófono, 5 s, 1080 × 1920 | fal: imagen con nano-banana-2.1 y video con Wan 3.0 Prime. Links en `assets/provisorios/LEEME.md` | MP4 vertical, corto, en loop, liviano |
+| Video en la pantalla del teléfono | Apertura | Final | `assets/apertura/creador.mp4` y su portada `creador.jpg` (Wan 3.0 Prime) | MP4 vertical 720 × 1280, 5 s, sin audio |
 | Teléfonos de fondo | Apertura, embudo, escala | Se hacen con código | Three.js o CSS. Referencia: `assets/provisorios/ph_on.png` y `ph_off.png` | — |
-| Videos cortos | Embudo, proceso, teléfonos encendidos | Provisorios | `assets/provisorios/videos-cortos/` (9). Finales: fal o material real con permiso | WebP o MP4 vertical |
+| Videos cortos | Embudo, proceso, teléfonos encendidos | Finales: 6 rubros distintos (trading, finanzas, real estate, ecommerce, calle, clase) | `assets/cortos/` con portada `.jpg` cada uno. En los teléfonos chicos va solo la portada | MP4 vertical 720 × 1280, 5 s, sin audio |
 | Embudo | Embudo | Provisorio: vector de la dirección A (en `diseno/direccion-A.html`); versión anterior en `assets/provisorios/funnel.webp` | SVG a mano o 3D | SVG |
-| Tira de video largo | Proceso, paso 01 | Provisoria | `assets/provisorios/strip.jpg` | WebP horizontal |
+| Episodio largo | Proceso, paso 01 (la tira se arma con cuadros) | Final | `assets/proceso/episodio.mp4` y `episodio.jpg` | MP4 horizontal 1280 × 720, 8 s, sin audio |
 | Fuentes | Toda la página | Final: Geist y Geist Mono (`assets/fuentes/geist/`, licencia libre). Las de Funke, de referencia, en `assets/fuentes/funke/` | Geist | WOFF2 |
 
 ## Requisitos técnicos
