@@ -9,29 +9,80 @@
 html,body{background:#000;color:#F9F9F9;font-family:NH,system-ui,sans-serif;letter-spacing:.012em;-webkit-font-smoothing:antialiased}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
 .mono{font:400 11px/1.4 GM,monospace;text-transform:uppercase;letter-spacing:.08em;color:#8a8a8a}
-h2{font-weight:500;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,4.4vw,64px)}
+h2{font-weight:500;letter-spacing:-.02em;line-height:1;font-size:clamp(34px,4.2vw,62px)}
 h2 em{font-style:normal;color:#FD5609}
 p.b{font-size:17px;line-height:1.4;color:#c9c9c9;max-width:440px}
 .intro,.outro{height:90vh;display:flex;flex-direction:column;justify-content:center;padding:0 6vw;gap:14px}
 .outro{height:70vh}
 .scene{position:relative}
 .stage{position:sticky;top:0;height:100vh;overflow:hidden}
-.txt{position:absolute;left:6vw;top:16vh;width:min(560px,40vw);z-index:5;transition:opacity .35s}
+.txt{position:absolute;left:6vw;top:16vh;width:min(540px,38vw);z-index:5;transition:opacity .35s}
 .txt .mono{margin-bottom:14px}.txt p.b{margin-top:18px}
-/* teléfonos */
-.ph{position:absolute;border-radius:16%/8%;background:#0b0b0b;box-shadow:inset 0 0 0 1.5px #2e2e2e;overflow:hidden;will-change:transform}
-.ph img,.ph video{position:absolute;inset:5%;width:90%;height:90%;object-fit:cover;border-radius:12%/6%;transition:opacity .4s}
-.ph.off img{opacity:0}
-.card{position:absolute;border-radius:10px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.12);will-change:transform}
-.hero{z-index:3}
-/* proceso */
-.vid{position:absolute;overflow:hidden;border-radius:14px;will-change:transform,width,height,left,top}
-.vid video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.tl{position:absolute;height:6px;border-radius:3px;background:#262626}
-.tl i{position:absolute;top:-3px;height:12px;border-radius:3px;background:#FD5609;transform-origin:left;}
-.crop{position:absolute;border:2px solid #FD5609;border-radius:6px;pointer-events:none}
-.steps{position:absolute;left:6vw;bottom:9vh;display:flex;gap:28px;z-index:5}
-.steps div{opacity:.28;transition:opacity .3s;max-width:220px}
+
+/* ---------- teléfono: marco + interfaz ---------- */
+.ph{position:absolute;container-type:inline-size;border-radius:16cqw;background:linear-gradient(150deg,#2c2c2c,#0e0e0e 35%,#121212 70%,#262626);box-shadow:inset 0 0 0 .7cqw #060606,0 0 0 1px #3a3a3a,0 1.5cqw 5cqw rgba(0,0,0,.6);will-change:left,top,width,height}
+.ph .bt{position:absolute;width:1.3cqw;background:#2d2d2d;border-radius:1cqw}
+.ph .b1{left:-1.1cqw;top:21%;height:6%}.ph .b2{left:-1.1cqw;top:29%;height:10%}.ph .b3{right:-1.1cqw;top:26%;height:14%}
+.ph .scr{position:absolute;inset:3.6cqw;border-radius:12.5cqw;overflow:hidden;background:#050505}
+.ph .isl{position:absolute;left:50%;top:6.4cqw;width:27cqw;height:7.6cqw;margin-left:-13.5cqw;border-radius:9cqw;background:#000;z-index:4}
+.scr img,.scr video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s,transform .6s}
+.ui{position:absolute;inset:0;color:#fff;transition:opacity .35s;z-index:3}
+.ui .sh{position:absolute;inset:auto 0 0 0;height:42%;background:linear-gradient(transparent,rgba(0,0,0,.6))}
+.ui .st{position:absolute;inset:0 0 auto 0;height:18%;background:linear-gradient(rgba(0,0,0,.35),transparent)}
+.sb{position:absolute;top:4.6cqw;left:9cqw;right:7.5cqw;display:flex;justify-content:space-between;align-items:center;font:500 6cqw/1 NH;letter-spacing:0}
+.sb .si{display:flex;gap:1.6cqw;align-items:center}.sb svg{height:4.6cqw;width:auto;display:block}
+.side{position:absolute;right:3.5cqw;bottom:23cqw;display:flex;flex-direction:column;align-items:center}
+.side svg{width:10cqw;height:10cqw;display:block;filter:drop-shadow(0 .3cqw .8cqw rgba(0,0,0,.5))}
+.side em{font:500 4.4cqw/1 NH;font-style:normal;margin:1cqw 0 4cqw}
+.bot{position:absolute;left:6cqw;right:19cqw;bottom:8.5cqw;display:flex;flex-direction:column;gap:1.8cqw}
+.bot b{font:500 5.8cqw/1.1 NH;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bot .vw{font:400 5cqw/1 GM;letter-spacing:0;display:flex;align-items:center;gap:1.4cqw}
+.bot .vw svg{width:4cqw;height:4cqw}
+.pg{position:absolute;left:0;right:0;bottom:3.4cqw;height:.9cqw;background:rgba(255,255,255,.22)}
+.pg i{display:block;height:100%;width:0;background:#fff;animation:pg 7s linear infinite}
+@keyframes pg{to{width:100%}}
+.sub{position:absolute;left:7cqw;right:7cqw;top:57%;text-align:center;font:500 8.6cqw/1.12 NH;letter-spacing:-.01em;color:#fff;text-shadow:0 .4cqw 1.4cqw rgba(0,0,0,.8);z-index:2;transition:opacity .3s}
+.ph .sub{left:7cqw;right:21cqw;top:52%;text-align:left;font-size:8cqw}
+.sub em{font-style:normal;color:#FD5609}
+.ph .pais{position:absolute;left:9%;top:13%;z-index:4;font:400 max(6px,7cqw)/1 GM;letter-spacing:.06em;color:#fff;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:4px;padding:.35em .55em;transition:opacity .3s}
+.ph.off .pais{opacity:0}
+.ph.off .ui,.ph.off img,.ph.off video,.ph.off .sub{opacity:0}
+
+/* ---------- escena 1 ---------- */
+.card{position:absolute;left:0;top:0;border-radius:10px;background-size:cover;background-position:center;box-shadow:0 10px 30px rgba(0,0,0,.6);border:1px solid rgba(255,255,255,.14);will-change:transform;transform-origin:0 0}
+.net{position:absolute;inset:0;width:100%;height:100%;z-index:1;pointer-events:none}
+.net path{fill:none;stroke-linecap:round}
+.net .base{stroke:#2f2f2f;stroke-width:1.2}
+.net .hot{stroke:#FD5609;stroke-width:1.6}
+
+/* ---------- escena 2: editor ---------- */
+.ed{position:absolute;left:0;top:0;transform-origin:0 0;z-index:2;will-change:transform}
+.ehd{display:flex;justify-content:space-between;align-items:center;height:30px;padding:0 2px}
+.ehd .upb{flex:1;height:2px;background:#222;margin:0 16px;position:relative}.ehd .upb i{position:absolute;inset:0 auto 0 0;background:#FD5609}
+.erow{display:flex;gap:14px}
+.ev{position:relative;width:66%;aspect-ratio:16/9;border-radius:12px;overflow:hidden;background:#0a0a0a;box-shadow:0 0 0 1px #222}
+.ev video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ev .tc{position:absolute;left:12px;bottom:10px;color:#fff;background:rgba(0,0,0,.55);padding:4px 7px;border-radius:5px;letter-spacing:.04em}
+.ev .rec{position:absolute;right:12px;top:10px;color:#fff;background:rgba(0,0,0,.55);padding:4px 7px;border-radius:5px}
+.crop{position:absolute;top:0;bottom:0;border:2px solid #FD5609;border-radius:6px;box-shadow:0 0 0 2000px rgba(0,0,0,.45);transition:left .35s}
+.tr{flex:1;position:relative;overflow:hidden;border-radius:12px;background:#0a0a0a;box-shadow:0 0 0 1px #222;-webkit-mask:linear-gradient(transparent,#000 18%,#000 82%,transparent)}
+.tr .in{position:absolute;left:0;right:0;top:0;padding:0 16px;will-change:transform}
+.tr .ln{padding:9px 8px;border-radius:7px;font-size:14px;line-height:1.35;color:#5a5a5a;transition:color .25s,background .25s}
+.tr .ln .mono{display:block;font-size:10px;margin-bottom:3px;color:inherit;opacity:.8}
+.tr .ln.now{color:#e9e9e9}
+.tr .ln.pick{background:rgba(253,86,9,.16);color:#FD5609}
+.fs{display:flex;gap:3px;margin-top:12px;height:46px}
+.fs img{flex:1;min-width:0;height:100%;object-fit:cover;border-radius:3px;transition:opacity .3s}
+.wf{position:relative;height:54px;margin-top:8px;display:flex;align-items:center;gap:2px}
+.wf b{flex:1;background:#3a3a3a;border-radius:1px;transform-origin:center;transition:background .25s}
+.wf b.pick{background:#FD5609}
+.wf .ph-l{position:absolute;top:-62px;bottom:-4px;width:2px;background:#fff;border-radius:1px;z-index:3}
+.wf .mk{position:absolute;top:-4px;bottom:-4px;border:1.5px solid #FD5609;border-radius:4px;transition:opacity .25s}
+.wf .mk span{position:absolute;top:-18px;left:50%;transform:translateX(-50%);color:#FD5609;white-space:nowrap;font-size:10px}
+.cut{position:absolute;overflow:hidden;z-index:6;will-change:left,top,width,height;container-type:inline-size}
+.cut video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.steps{position:absolute;left:6vw;bottom:7vh;display:flex;gap:28px;z-index:5}
+.steps div{opacity:.28;transition:opacity .3s;max-width:300px}
 .steps div.on{opacity:1}
 .steps b{display:block;font-weight:500;font-size:18px;margin:6px 0 6px}
 .steps span{font-size:14px;line-height:1.35;color:#bdbdbd}
@@ -47,18 +98,28 @@ p.b{font-size:17px;line-height:1.4;color:#c9c9c9;max-width:440px}
   <p class="b">Bajá despacio. El botón de abajo a la derecha prende y apaga la inercia del scroll para comparar.</p>
 </section>
 
-<section class="scene" id="s1" style="height:320vh"><div class="stage" id="st1">
-  <div class="txt" id="t1a"><div class="mono">el límite</div><h2>Una sola cuenta<br><em>tiene un límite.</em></h2><p class="b">En redes, el alcance es cuestión de volumen. Nadie sabe qué video va a explotar, por eso hacen falta muchos.</p></div>
-  <div class="txt" id="t1b" style="opacity:0"><div class="mono">multicuentas</div><h2>Un sistema de teléfonos<br><em>publicando a la vez.</em></h2><p class="b">Cada teléfono maneja sus propias cuentas, con su propia conexión, y todas publican al mismo tiempo, todos los días.</p></div>
+<section class="scene" id="s1" style="height:340vh"><div class="stage" id="st1">
+  <svg class="net" id="net"></svg>
+  <div class="txt" id="t1a"><div class="mono">el límite</div><h2>Una sola cuenta<br><em>tiene un límite.</em></h2><p class="b">En redes, el alcance es cuestión de volumen. Nadie sabe qué video va a explotar, por eso hacen falta muchos. Imaginá cientos de cuentas publicando tu contenido todos los días.</p></div>
+  <div class="txt" id="t1b" style="opacity:0"><div class="mono">multicuentas</div><h2>Un sistema de teléfonos<br><em>publicando a la vez.</em></h2><p class="b">Multie trabaja con un ecosistema de teléfonos reales. Cada teléfono maneja sus propias cuentas, con su propia conexión, y cada cuenta publica todos los días. Un solo video largo sale convertido en decenas de piezas, por decenas de cuentas a la vez. Y cada una puede publicar para el país que elijas: Argentina, México, España o donde esté tu público.</p></div>
 </div></section>
 
-<section class="scene" id="s2" style="height:300vh"><div class="stage" id="st2">
-  <div class="txt" style="top:12vh"><div class="mono">el proceso</div></div>
+<section class="scene" id="s2" style="height:340vh"><div class="stage" id="st2">
+  <div class="txt" style="top:6vh"><div class="mono">el proceso</div></div>
+  <div class="ed" id="ed">
+    <div class="ehd"><span class="mono" style="color:#cfcfcf">episodio_completo.mp4</span><span class="upb"><i id="upb"></i></span><span class="mono" id="upt">subiendo · 0 %</span></div>
+    <div class="erow">
+      <div class="ev" id="ev"><video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline></video><div class="crop" id="crop"></div><div class="tc mono" id="tc">00:00:00 / 01:24:36</div><div class="rec mono" id="rec">4K · 2 cámaras</div></div>
+      <div class="tr"><div class="in" id="trin"></div></div>
+    </div>
+    <div class="fs" id="fs"></div>
+    <div class="wf" id="wf"></div>
+  </div>
   <div class="steps" id="steps">
-    <div><div class="mono">01</div><b>Se envía el material.</b><span>Un archivo o un link de YouTube.</span></div>
-    <div><div class="mono">02</div><b>Elegimos y editamos.</b><span>Los momentos que se sostienen solos, en vertical.</span></div>
-    <div><div class="mono">03</div><b>Repartimos los videos.</b><span>Cada corto, a una cuenta distinta.</span></div>
-    <div><div class="mono">04</div><b>Se publica y se mide.</b><span>Todos los días, en vivo en la plataforma.</span></div>
+    <div><div class="mono">01</div><b>Se envía el material.</b><span>Un archivo o un link de YouTube. Sirve lo que se graba esta semana y también el archivo viejo que nunca se usó.</span></div>
+    <div><div class="mono">02</div><b>Elegimos y editamos.</b><span>Buscamos los momentos que se sostienen solos y los armamos en vertical, con subtítulos y con el estilo que el cliente elige en la plataforma.</span></div>
+    <div><div class="mono">03</div><b>Repartimos los videos.</b><span>Los videos se distribuyen entre las cuentas según la estrategia del proyecto: qué publica cada una, en qué horario y con qué frecuencia.</span></div>
+    <div><div class="mono">04</div><b>Se publica y se mide.</b><span>Las cuentas publican todos los días. En la plataforma se ve en vivo qué video funciona y por qué.</span></div>
   </div>
 </div></section>
 
@@ -69,76 +130,141 @@ p.b{font-size:17px;line-height:1.4;color:#c9c9c9;max-width:440px}
 
 <script src="lenis.min.js"></script>
 <script>
+const M=n=>n==='creador'?'../../assets/apertura/creador':'../../assets/cortos/'+n;
 const $=s=>document.querySelector(s),cl=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),seg=(p,a,b)=>cl((p-a)/(b-a)),ease=t=>t<.5?2*t*t:1-Math.pow(-2*t+2,2)/2,lerp=(a,b,t)=>a+(b-a)*t;
-const POS=['01-trading','02-finanzas','03-real-estate','04-ecommerce','05-calle','06-clase'];
+const POS=['01-trading','02-finanzas','03-real-estate','04-ecommerce','05-calle','06-clase','01-trading-b','02-finanzas-b','03-real-estate-b','04-ecommerce-b','05-calle-b','06-clase-b'];
+// Textos de prueba (no son del guion): usuarios de las cuentas, transcripción y subtítulos.
+const HANDLES=['mercados.hoy','plata.clara','casa.propia','tienda.online','negocios.de.calle','clase.abierta','cripto.simple','invertir.facil','emprender.ya','finanzas.diarias','ventas.pro','mente.de.negocio'];
 let W=innerWidth,H=innerHeight;
-/* ---------- escena 1: cuello de botella ---------- */
-const st1=$('#st1'),N=24,Q=14;let phones=[],queue=[],hero;
-function mkPhone(i,isHero){const d=document.createElement('div');d.className='ph'+(isHero?' hero':' off');
- if(isHero){d.innerHTML='<video src="../../assets/apertura/creador.mp4" autoplay muted loop playsinline></video>'}else{d.innerHTML=`<img src="../../assets/cortos/${POS[i%6]}.jpg" alt="">`}
- st1.appendChild(d);return d}
-hero=mkPhone(0,true);for(let i=0;i<N;i++)phones.push(mkPhone(i));
-for(let i=0;i<Q;i++){const c=document.createElement('div');c.className='card';c.style.backgroundImage=`url(../../assets/cortos/${POS[(i+2)%6]}.jpg)`;st1.appendChild(c);queue.push(c)}
-function grid(){// grilla ordenada a la derecha, debajo de nada: ocupa el área libre
- const cols=W>900?8:4,rows=Math.ceil(N/cols),areaL=W>900?W*.47:W*.08,areaR=W*.95,areaT=H*.14,areaB=H*.9;
- const gw=(areaR-areaL)/cols,gh=(areaB-areaT)/rows,pw=Math.min(gw*.78,gh*.78/2.05),ph=pw*2.05;
- return Array.from({length:N},(_,i)=>{const c=i%cols,r=Math.floor(i/cols);return{x:areaL+gw*c+(gw-pw)/2,y:areaT+gh*r+(gh-ph)/2,w:pw,h:ph}})}
+
+/* ---------- teléfono reutilizable: marco + interfaz ---------- */
+const I={
+ heart:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.6-4.7-9.7-9.3C.8 8.3 3 4.4 6.7 4.4c2.1 0 3.6 1.1 4.4 2.6.8-1.5 2.3-2.6 4.4-2.6 3.7 0 5.9 3.9 4.4 7.3C19.6 16.3 12 21 12 21z"/></svg>',
+ com:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.8 2 11.5c0 2.6 1.4 4.9 3.6 6.5L5 21.5l4.1-2.1c.9.2 1.9.3 2.9.3 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg>',
+ share:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 4l8 7.5-8 7.5v-4.6c-6 0-9.5 1.9-12 5.6 1-6 4.5-10.5 12-11.5V4z"/></svg>',
+ sig:'<svg viewBox="0 0 18 12"><rect x="0" y="8" width="3" height="4" rx="1" fill="#fff"/><rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="#fff"/><rect x="10" y="3" width="3" height="9" rx="1" fill="#fff"/><rect x="15" y="0" width="3" height="12" rx="1" fill="#fff"/></svg>',
+ bat:'<svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3" fill="none" stroke="#fff" opacity=".5"/><rect x="2" y="2" width="17" height="8" rx="1.6" fill="#fff"/><rect x="24.5" y="4" width="2" height="4" rx="1" fill="#fff" opacity=".5"/></svg>',
+ play:'<svg viewBox="0 0 10 10"><path fill="currentColor" d="M2 1l7 4-7 4z"/></svg>'};
+const fmt=n=>n<1000?String(Math.round(n)):n<1e6?(n/1000).toFixed(1).replace('.',',')+' mil':(n/1e6).toFixed(1).replace('.',',')+' M';
+function makePhone(parent,o){
+ const d=document.createElement('div');d.className='ph off';
+ const media=o.video?`<video src="${o.video}" autoplay muted loop playsinline style="object-position:${o.pos||'50%'} 50%"></video>`:`<img src="${o.img}" alt="">`;
+ d.innerHTML=`<i class="bt b1"></i><i class="bt b2"></i><i class="bt b3"></i><div class="scr">${media}${o.sub?`<div class="sub">${o.sub}</div>`:''}<div class="ui"><div class="st"></div><div class="sh"></div><div class="sb"><span>9:41</span><span class="si">${I.sig}${I.bat}</span></div><div class="side">${I.heart}<em>${o.likes}</em>${I.com}<em>${o.com}</em>${I.share}<em>${o.sh}</em></div><div class="bot"><b>@${o.handle}</b><span class="vw">${I.play}<span>0</span></span></div><div class="pg"><i style="animation-delay:-${(Math.random()*7).toFixed(2)}s"></i></div></div></div><div class="isl"></div>`;
+ parent.appendChild(d);
+ const P={el:d,vw:d.querySelector('.vw span'),base:o.base,fixed:o.fixed,lit:false,t0:0,
+  on(v){if(v===P.lit)return;P.lit=v;d.classList.toggle('off',!v);P.t0=performance.now()},
+  tick(now){if(!P.lit)return;P.vw.textContent=P.fixed?P.fixed:fmt(P.base*(1-Math.exp(-(now-P.t0)/3500)))+' vistas'},
+  box(x,y,w,h,extra=''){d.style.cssText=`left:${x}px;top:${y}px;width:${w}px;height:${h}px;${extra}`}};
+ return P}
+const rnd=(a,b,s)=>{const x=Math.sin(s*999.7)*43758.5453;return a+(b-a)*(x-Math.floor(x))};
+
+/* ---------- escena 1: un teléfono que no da abasto, conectado a muchos ---------- */
+const st1=$('#st1'),net=$('#net'),N=24;
+const hero=makePhone(st1,{video:'../../assets/apertura/creador.mp4',handle:'tu.cuenta',likes:'84',com:'6',sh:'2',fixed:'1.240 vistas'});hero.el.style.zIndex=4;hero.on(true);
+const phones=[],cards=[],lines=[];
+const perm=Array.from({length:N},(_,i)=>(i*7+3)%N);// orden salteado
+const PAIS={1:'AR',4:'MX',6:'ES',9:'CO',13:'CL',16:'US',19:'PE',22:'UY'};
+for(let j=0;j<N;j++){const img=`${M(POS[((j%6)*5+Math.floor(j/6)*7)%12])}.jpg`;phones.push(makePhone(st1,{img,handle:HANDLES[j%12],likes:fmt(rnd(2e3,9e4,j)),com:fmt(rnd(40,900,j+3)),sh:fmt(rnd(30,700,j+7)),base:rnd(1.5e4,9e5,j+11)}));phones[j].el.style.zIndex=3;if(PAIS[j])phones[j].el.querySelector('.scr').insertAdjacentHTML('beforeend',`<span class="pais">${PAIS[j]}</span>`)}
+for(let i=0;i<N;i++){const c=document.createElement('div');c.className='card';c.style.backgroundImage=`url(${M(POS[((perm[i]%6)*5+Math.floor(perm[i]/6)*7)%12])}.jpg)`;st1.appendChild(c);cards.push(c)}
+const NS='http://www.w3.org/2000/svg';
+for(let j=0;j<N;j++){const b=document.createElementNS(NS,'path'),h=document.createElementNS(NS,'path');b.setAttribute('class','base');h.setAttribute('class','hot');[b,h].forEach(e=>{e.setAttribute('pathLength',1);e.style.strokeDasharray='1 1';net.appendChild(e)});lines.push({b,h})}
+function layout1(){
+ const big=W>900;
+ const h0w=Math.min(W*.16,230),h0={w:h0w,h:h0w*2.05};h0.x=W*.6-h0w/2;h0.y=H*.5-h0.h/2;
+ const h1w=Math.min(W*.08,112),h1={w:h1w,h:h1w*2.05};h1.x=W*.525-h1w/2;h1.y=H*.5-h1.h/2;
+ const cols=big?6:4,rows=Math.ceil(N/cols),L=W*.635,R=W*.965,T=H*.07,B=H*.93;
+ const gw=(R-L)/cols,gh=(B-T)/rows,pw=Math.min(gw*.8,gh*.84/2.05),ph=pw*2.05;
+ const G=Array.from({length:N},(_,i)=>{const c=i%cols,r=Math.floor(i/cols);return{x:L+gw*c+(gw-pw)/2,y:T+gh*r+(gh-ph)/2,w:pw,h:ph,c}});
+ return{h0,h1,G}}
 function scene1(p){
- const hw=Math.min(W*.17,240),hh=hw*2.05,hx=W*.6-hw/2,hy=H*.5-hh/2,G=grid();
- const qIn=seg(p,.05,.45),split=ease(seg(p,.5,.78)),fly=seg(p,.58,.92),swap=p>.48;
- $('#t1a').style.opacity=swap?0:1;$('#t1b').style.opacity=swap?1:0;
- // teléfono protagonista: se achica y se vuelve uno más de la grilla
- const g0=G[Math.floor(N/2)];
- const x=lerp(hx,g0.x,split),y=lerp(hy,g0.y,split),w=lerp(hw,g0.w,split),h=lerp(hh,g0.h,split);
- hero.style.cssText=`left:${x}px;top:${y}px;width:${w}px;height:${h}px`;
- // los demás salen del protagonista
- phones.forEach((d,i)=>{const g=G[i],t=ease(cl(split*1.25-(i%8)*.03));
-  d.style.cssText=`left:${lerp(hx+hw*.1,g.x,t)}px;top:${lerp(hy+hh*.1,g.y,t)}px;width:${lerp(hw*.8,g.w,t)}px;height:${lerp(hh*.8,g.h,t)}px;opacity:${split>0?cl(t*3):0}`;
-  d.classList.toggle('off',fly<(i%N)/N*.9+.05)});
- // cola: videos que esperan entrar al teléfono, en fila a la izquierda
- const cw=Math.min(W*.06,86),chh=cw*1.75;
- queue.forEach((c,i)=>{const arrive=cl(qIn*Q-i);// van llegando de a uno
-  const slotX=hx+hw+18+i*(cw*.3),slotY=hy+hh-chh-(i%2)*10,fromX=W+cw;
-  let X=lerp(fromX,slotX,ease(arrive)),Y=slotY,S=1,O=arrive>0?1:0;
-  // al dividirse: cada video vuela a un teléfono
-  const k=cl(fly*1.3-i*.025),tg=G[(i*5+3)%N];
-  if(k>0){X=lerp(X,tg.x+tg.w*.1,ease(k));Y=lerp(Y,tg.y+tg.h*.1,ease(k));S=lerp(1,tg.w*.8/cw,ease(k));O=1-cl((k-.85)/.15)}
-  c.style.cssText=`background-image:url(../../assets/cortos/${POS[(i+2)%6]}.jpg);left:0;top:0;width:${cw}px;height:${chh}px;transform:translate(${X}px,${Y}px) scale(${S}) rotate(${(1-ease(k))*((i%3)-1)*4}deg);transform-origin:0 0;opacity:${O};z-index:${4+i}`;
+ const {h0,h1,G}=layout1();
+ const qIn=seg(p,.04,.4),move=ease(seg(p,.46,.58)),draw=seg(p,.56,.72),fly=seg(p,.62,.97);
+ const swap=p>.45;$('#t1a').style.opacity=swap?0:1;$('#t1b').style.opacity=swap?1:0;
+ // protagonista: se corre y queda como origen de la red
+ const hx=lerp(h0.x,h1.x,move),hy=lerp(h0.y,h1.y,move),hw=lerp(h0.w,h1.w,move),hh=lerp(h0.h,h1.h,move);
+ hero.box(hx,hy,hw,hh,'z-index:4');
+ const ox=h1.x+h1.w,oy=h1.y+h1.h*.5;
+ // líneas: del teléfono del creador a cada teléfono
+ G.forEach((g,j)=>{const x1=g.x,y1=g.y+g.h*.5,mx=ox+(x1-ox)*.5,d=`M${ox} ${oy}C${mx} ${oy} ${mx} ${y1} ${x1} ${y1}`;
+  const L=lines[j];L.b.setAttribute('d',d);L.h.setAttribute('d',d);
+  const t=ease(cl(draw*1.6-g.c*.1));L.b.style.strokeDashoffset=1-t;L.t=t;
+  const P=phones[j];P.box(g.x,g.y,g.w,g.h,`opacity:${seg(t,.75,1)};transform:scale(${lerp(.85,1,seg(t,.75,1))})`)});
+ // cola de videos esperando y viaje por la línea
+ const cw=Math.min(W*.058,84),chh=cw*1.75;
+ const lit=new Array(N).fill(false);
+ cards.forEach((c,i)=>{const j=perm[i],g=G[j];
+  const arrive=cl(qIn*N-i),slotX=h0.x+h0.w+16+Math.min(i,13)*(cw*.3)+Math.max(0,i-13)*2.5,slotY=h0.y+h0.h-chh-(i%2)*10;
+  let X=lerp(W+cw,slotX,ease(arrive)),Y=slotY,w=cw,h=chh,O=arrive>0?1:0,R=((i%3)-1)*4;
+  // se juntan en la salida del teléfono
+  const sx=ox-cw*.6+(i%5)*2,sy=oy-chh*.5-(i%5)*1.5;X=lerp(X,sx,move);Y=lerp(Y,sy,move);R*=1-move;
+  const k=ease(cl((fly-i/N*.62)/.38));
+  if(k>0){const pt=lines[j].b.getPointAtLength(k*lines[j].b.getTotalLength());
+   w=lerp(cw,g.w*.93,k);h=lerp(chh,g.h*.93,k);
+   X=lerp(pt.x-w*.5,g.x+g.w*.035,seg(k,.8,1));Y=lerp(pt.y-h*.5,g.y+g.h*.035,seg(k,.8,1));
+   O=1-seg(k,.92,1)}
+  lines[j].h.style.strokeDashoffset=1-k;lines[j].h.style.opacity=k>=1?.5:1;
+  if(k>=.97)lit[j]=true;
+  c.style.cssText=`background-image:url(${M(POS[((j%6)*5+Math.floor(j/6)*7)%12])}.jpg);width:${w}px;height:${h}px;transform:translate(${X}px,${Y}px) rotate(${R}deg);opacity:${O};z-index:${k>0?5:move>.5?3:6+i};border-radius:${lerp(10,g.w*.11,k)}px`;
  });
+ phones.forEach((P,j)=>P.on(lit[j]));
 }
-/* ---------- escena 2: proceso ---------- */
-const st2=$('#st2');const main=document.createElement('div');main.className='vid';main.innerHTML='<video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline></video>';st2.appendChild(main);
-const tl=document.createElement('div');tl.className='tl';st2.appendChild(tl);
-const MARKS=[[.08,.18],[.3,.4],[.52,.62],[.76,.86]];const marks=MARKS.map(([a,b])=>{const i=document.createElement('i');i.style.left=a*100+'%';i.style.width=(b-a)*100+'%';tl.appendChild(i);return i});
-const crop=document.createElement('div');crop.className='crop';st2.appendChild(crop);
-const OPOS=['30%','72%','28%','74%'];
-const cuts=OPOS.map((op,i)=>{const d=document.createElement('div');d.className='vid';d.innerHTML=`<video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline style="object-position:${op} 50%"></video>`;st2.appendChild(d);return d});
-const ph2=OPOS.map(()=>{const d=document.createElement('div');d.className='ph';d.style.opacity=0;st2.insertBefore(d,cuts[0]);return d});
+
+/* ---------- escena 2: el proceso ---------- */
+const st2=$('#st2'),ed=$('#ed'),ev=$('#ev'),wf=$('#wf'),fs=$('#fs'),trin=$('#trin'),crop=$('#crop');
+const DUR=5076;// 1:24:36
+const tcf=s=>[Math.floor(s/3600),Math.floor(s/60)%60,Math.floor(s)%60].map(v=>String(v).padStart(2,'0')).join(':');
+const LINES=[
+ ['¿Cómo arrancaste con todo esto?'],['Con cero seguidores y un celular prestado.'],
+ ['El primer año no vendí nada. Nada.'],['Lo que cambió todo fue publicar todos los días.',0],
+ ['¿Todos los días? ¿Aunque no lo viera nadie?'],['Todos. El error es esperar el video perfecto.',1],
+ ['Y mientras tanto, ¿de qué vivías?'],['De lo que me quedaba de la mudanza, y de amigos.'],
+ ['Si tu primer video no te da vergüenza, empezaste tarde.',2],['¿Hoy qué le dirías a alguien que arranca?'],
+ ['Que la plata está en la constancia, no en la suerte.',3],['Me encanta. Cortamos ahí.']];
+LINES.forEach((l,i)=>{const d=document.createElement('div');d.className='ln';d.innerHTML=`<span class="mono">${tcf(DUR*(i+.4)/LINES.length)}</span>${l[0]}`;trin.appendChild(d);l.el=d});
+// cada momento elegido: dónde está, a quién encuadra y el subtítulo del corto
+const MOM=[{at:(3+.4)/12,pos:.3,sub:'Lo que cambió todo fue <em>publicar todos los días.</em>'},{at:(5+.4)/12,pos:.72,sub:'El error es esperar <em>el video perfecto.</em>'},{at:(8+.4)/12,pos:.3,sub:'Si no te da vergüenza, <em>empezaste tarde.</em>'},{at:(10+.4)/12,pos:.72,sub:'La plata está en <em>la constancia.</em>'}];
+for(let i=0;i<12;i++){const im=document.createElement('img');im.src=`tira/${i}.jpg`;fs.appendChild(im)}
+const NB=150,bars=[];for(let i=0;i<NB;i++){const b=document.createElement('b');const x=i/NB;let hgt=.18+.5*Math.abs(Math.sin(i*1.7)*Math.cos(i*.31))+.25*rnd(0,1,i);MOM.forEach(m=>{if(Math.abs(x-m.at)<.03)hgt=.75+.25*rnd(0,1,i+5)});b.style.height=(cl(hgt)*100)+'%';wf.appendChild(b);bars.push(b)}
+const marks=MOM.map(m=>{const d=document.createElement('div');d.className='mk';d.style.left=(m.at-.025)*100+'%';d.style.width='5%';d.innerHTML=`<span class="mono">${tcf(DUR*m.at)}</span>`;wf.appendChild(d);return d});
+const head=document.createElement('div');head.className='ph-l';wf.appendChild(head);
+const cuts=MOM.map(m=>{const d=document.createElement('div');d.className='cut';d.innerHTML=`<video src="../../assets/proceso/episodio.mp4" autoplay muted loop playsinline style="object-position:${m.pos*100}% 50%"></video><div class="sub" style="opacity:0">${m.sub}</div>`;st2.appendChild(d);return d});
+const ph2=MOM.map((m,i)=>{const P=makePhone(st2,{video:'../../assets/proceso/episodio.mp4',pos:m.pos*100+'%',sub:m.sub,handle:HANDLES[[0,1,8,9][i]],likes:fmt(rnd(5e3,8e4,i+40)),com:fmt(rnd(80,900,i+41)),sh:fmt(rnd(60,800,i+42)),base:rnd(1e5,1.2e6,i+43)});P.el.querySelector('video').style.transform='scale(1.12)';P.el.style.zIndex=5;return P});
 function scene2(p){
- const mw=Math.min(W*.5,780),mh=mw*9/16,mx=W*.5-mw/2,my=H*.16;
  const s=p<.25?0:p<.5?1:p<.75?2:3;[...$('#steps').children].forEach((d,i)=>d.classList.toggle('on',i===s));
- const shrink=ease(seg(p,.45,.6));const MW=lerp(mw,mw*.62,shrink),MH=MW*9/16,MX=lerp(mx,W*.5-mw*.31,shrink),MY=lerp(my,H*.1,shrink);
- main.style.cssText=`left:${MX}px;top:${MY}px;width:${MW}px;height:${MH}px;opacity:${lerp(1,.35,shrink)}`;
- tl.style.cssText=`left:${MX}px;top:${MY+MH+14}px;width:${MW}px;opacity:${seg(p,.18,.25)}`;
- marks.forEach((m,i)=>m.style.transform=`scaleX(${ease(seg(p,.25+i*.05,.32+i*.05))})`);
- // recuadro vertical que recorta el cuadro
- const cw=MH*9/16;crop.style.cssText=`left:${MX+MW*.3-cw/2}px;top:${MY}px;width:${cw}px;height:${MH}px;opacity:${seg(p,.3,.36)*(1-seg(p,.46,.5))}`;
- // phones row
- const pw=Math.min(W*.085,120),phh=pw*2.05,gap=pw*.55,rowW=4*pw+3*gap,rx=W*.5-rowW/2,ry=H*.42;
- cuts.forEach((d,i)=>{const out=ease(seg(p,.46+i*.03,.62+i*.03)),into=ease(seg(p,.7+i*.025,.86+i*.025));
-  // nace dentro del cuadro (16:9 recortado), se angosta a 9:16 y baja al teléfono
-  const sx=MX+MW*(i%2?.72:.3)-cw/2,sy=MY,sw=cw,sh=MH;
-  const fx=rx+i*(pw+gap)+pw*.05,fy=ry+phh*.05,fw=pw*.9,fh=phh*.9;
-  const midx=lerp(sx,rx+i*(pw+gap)-pw*.15,out),midy=lerp(sy,ry-phh*.25,out),midw=lerp(sw,pw*1.2,out),midh=lerp(sh,pw*1.2*16/9,out);
-  d.style.cssText=`left:${lerp(midx,fx,into)}px;top:${lerp(midy,fy,into)}px;width:${lerp(midw,fw,into)}px;height:${lerp(midh,fh,into)}px;opacity:${out>0?1:0};border-radius:${lerp(6,12,into)}px;z-index:4`;
-  ph2[i].style.cssText=`left:${rx+i*(pw+gap)}px;top:${ry}px;width:${pw}px;height:${phh}px;opacity:${seg(p,.62,.7)};box-shadow:inset 0 0 0 1.5px ${p>.88?'#FD5609':'#2e2e2e'}`;
- });
+ // 01: llega el material
+ const up=seg(p,.02,.14);$('#upb').style.width=up*100+'%';$('#upt').textContent=up<1?`subiendo · ${Math.round(up*100)} %`:'2,4 GB · 01:24:36';
+ ev.querySelector('video').style.opacity=seg(p,.12,.17);$('#rec').style.opacity=seg(p,.14,.18);
+ [...fs.children].forEach((im,i)=>im.style.opacity=seg(p,.12+i*.009,.15+i*.009));
+ bars.forEach((b,i)=>b.style.transform=`scaleY(${seg(p,.14+i/NB*.08,.17+i/NB*.08)})`);
+ // 02: el cabezal recorre el episodio y marca los momentos
+ const ph=seg(p,.25,.47);head.style.left=`calc(${ph*100}% - 1px)`;head.style.opacity=seg(p,.18,.25);
+ $('#tc').textContent=`${tcf(DUR*ph)} / 01:24:36`;
+ let last=-1;MOM.forEach((m,i)=>{const on=ph>m.at+.02;marks[i].style.opacity=on?1:0;if(on)last=i});
+ bars.forEach((b,i)=>{const x=i/NB;b.classList.toggle('pick',MOM.some((m,k)=>k<=last&&Math.abs(x-m.at)<.025))});
+ const cur=Math.min(LINES.length-1,Math.floor(ph*LINES.length));
+ LINES.forEach((l,i)=>{l.el.classList.toggle('now',i===cur&&p>.25);l.el.classList.toggle('pick',l[1]!==undefined&&l[1]<=last)});
+ const lh=LINES[0].el.offsetHeight+2,trh=trin.parentElement.offsetHeight;trin.style.transform=`translateY(${trh*.42-cur*lh-lh*.5}px)`;
+ // tamaño del editor
+ const E=Math.min(W*.74,1060),shrink=ease(seg(p,.47,.58)),sc=lerp(1,.5,shrink);
+ const ex=W*.5-E*sc*.5,ey=lerp(H*.1,H*.04,shrink);
+ ed.style.width=E+'px';ed.style.transform=`translate(${ex}px,${ey}px) scale(${sc})`;ed.style.opacity=lerp(1,.4,shrink);
+ const vr=ev.getBoundingClientRect(),sr=st2.getBoundingClientRect(),vx=vr.left-sr.left,vy=vr.top-sr.top,cw=vr.height*9/16;
+ const cm=MOM[Math.max(0,last)];crop.style.left=((vr.width-cw)*cm.pos/sc)+'px';crop.style.width=cw/sc+'px';crop.style.opacity=last>=0?1-seg(p,.5,.54):0;
+ // 03: los recortes salen del cuadro y bajan a los teléfonos
+ const pw=Math.min(W*.1,145),phh=pw*2.05,gap=pw*.5,rowW=4*pw+3*gap,rx=W*.5-rowW/2,ry=H*.37;
+ cuts.forEach((d,i)=>{const m=MOM[i],out=ease(seg(p,.5+i*.025,.63+i*.025)),into=ease(seg(p,.64+i*.025,.78+i*.025));
+  const px=rx+i*(pw+gap),sx=vx+(vr.width-cw)*m.pos,sy=vy;
+  const mx=lerp(sx,px-pw*.12,out),my=lerp(sy,ry-phh*.12,out),mw=lerp(cw,pw*1.24,out),mh=lerp(vr.height,pw*1.24*16/9,out);
+  const ins=pw*.036;
+  d.style.cssText=`left:${lerp(mx,px+ins,into)}px;top:${lerp(my,ry+ins,into)}px;width:${lerp(mw,pw-ins*2,into)}px;height:${lerp(mh,phh-ins*2,into)}px;border-radius:${lerp(4,pw*.125,into)}px;opacity:${out>0&&into<1?1:0}`;
+  d.querySelector('video').style.transform=`scale(${out>.6?1.12:1})`;d.querySelector('.sub').style.opacity=out>.7?1:0;
+  const P=ph2[i];P.box(px,ry,pw,phh,`opacity:${seg(p,.58,.66)}`);P.on(into>=1)});
 }
 /* ---------- scroll ---------- */
 function prog(el){const r=el.getBoundingClientRect();return cl(-r.top/(r.height-H))}
-function frame(){scene1(prog($('#s1')));scene2(prog($('#s2')))}
+function frame(now){scene1(prog($('#s1')));scene2(prog($('#s2')));hero.tick(now);phones.forEach(P=>P.tick(now));ph2.forEach(P=>P.tick(now))}
 let lenis=new Lenis({lerp:.09,smoothWheel:true});let on=true;
-function raf(t){if(on)lenis.raf(t);frame();requestAnimationFrame(raf)}requestAnimationFrame(raf);
+function raf(t){if(on)lenis.raf(t);frame(t);requestAnimationFrame(raf)}requestAnimationFrame(raf);
 $('#tg').onclick=()=>{on=!on;if(on){lenis=new Lenis({lerp:.09,smoothWheel:true})}else{lenis.destroy()}$('#tg').textContent='Inercia: '+(on?'activada':'desactivada')};
 addEventListener('resize',()=>{W=innerWidth;H=innerHeight});
 </script></body></html>

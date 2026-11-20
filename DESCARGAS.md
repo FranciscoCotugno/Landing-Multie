@@ -22,3 +22,15 @@ Archivos generados en fal que hay que bajar y subir al repo. Los links pueden ve
 | [x] | Imagen: episodio largo | https://v3b.fal.media/files/b/0ab2e4a5/a90NGxeHk-esJMjdBs0F__fKzw5tWb.jpg | `assets/proceso/episodio.jpg` |
 
 Todo bajado y subido el 17/11: versiones comprimidas para la web (MP4 H.264 sin audio, de 0,3 a 1 MB cada video) y una imagen de portada por video en `assets/apertura/`, `assets/cortos/` y `assets/proceso/`.
+
+## Reemplazo del 20/11: todo pasa a Higgsfield
+
+Los videos de fal de la tabla de arriba se reemplazaron por versiones hechas en Higgsfield, con la misma luz y textura en toda la página. Los nombres de archivo no cambian; se suman 6 cortos con `-b`.
+
+| Archivo | Imagen | Video |
+|---|---|---|
+| `assets/proceso/episodio.mp4` (10 s) | Soul 2.0 | Kling 3.0 Pro |
+| `assets/apertura/creador.mp4` (conductor del episodio) | Nano Banana Pro, con el episodio de referencia | Seedance 2.5 |
+| `assets/cortos/01-trading` … `06-clase` y `01-trading-b` … `06-clase-b` (12 cortos, dos por rubro) | Nano Banana Pro | Kling 3.0 Pro |
+
+Todos van comprimidos para la web (MP4 H.264 sin audio, 720 px de lado corto, de 0,3 a 0,9 MB) y con su portada `.jpg`. Los originales en alta quedan en la cuenta de Higgsfield de Cotu.

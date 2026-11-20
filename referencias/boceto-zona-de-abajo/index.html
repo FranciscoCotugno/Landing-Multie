@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Multie — boceto zona de abajo</title>
+<style>
+@font-face{font-family:NH;src:url(../../assets/fuentes/funke/NeueHaasDisplay-Roman.woff2) format("woff2");font-weight:400}
+@font-face{font-family:NH;src:url(../../assets/fuentes/funke/NeueHaasDisplay-Medium.woff2) format("woff2");font-weight:500}
+@font-face{font-family:GM;src:url(../../assets/fuentes/geist/GeistMono-Regular.woff2) format("woff2")}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#000;color:#F9F9F9;font-family:NH,system-ui,sans-serif;letter-spacing:.012em;-webkit-font-smoothing:antialiased}
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+.mono{font:400 11px/1.4 GM,monospace;text-transform:uppercase;letter-spacing:.08em;color:#8a8a8a}
+.mono.or{color:#FD5609}
+h2{font-weight:500;letter-spacing:-.02em;line-height:1;font-size:clamp(38px,4.3vw,64px)}
+h2 em,h3 em{font-style:normal;color:#FD5609}
+p.b{font-size:18px;line-height:1.45;color:#c4c4c4}
+.wrap{padding:0 6vw}
+.blk{padding-top:16vh;padding-bottom:16vh}
+.note{position:absolute;right:6vw;top:6vh;max-width:280px;text-align:right;color:#5d5d5d}
+section{position:relative}
+
+/* ======================= TELÉFONO ======================= */
+.tel{position:relative;container-type:inline-size;aspect-ratio:1/2.05;border-radius:16cqw;background:linear-gradient(150deg,#2e2e2e,#0e0e0e 35%,#121212 70%,#282828);box-shadow:inset 0 0 0 .7cqw #060606,0 0 0 1px #3a3a3a,0 2cqw 6cqw rgba(0,0,0,.6)}
+.tel .bt{position:absolute;width:1.3cqw;background:#2d2d2d;border-radius:1cqw}
+.tel .b1{left:-1.1cqw;top:21%;height:6%}.tel .b2{left:-1.1cqw;top:29%;height:10%}.tel .b3{right:-1.1cqw;top:26%;height:14%}
+.tel .scr{position:absolute;inset:3.6cqw;border-radius:12.5cqw;overflow:hidden;background:#000}
+.tel .isl{position:absolute;left:50%;top:6.4cqw;width:27cqw;height:7.6cqw;margin-left:-13.5cqw;border-radius:9cqw;background:#000;z-index:9}
+.tel .feed{position:absolute;inset:0 0 15.5cqw 0;overflow:hidden}
+.tel video,.tel .feed img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s}
+.tel .ui{position:absolute;inset:0;color:#fff;font-family:NH;letter-spacing:0;transition:opacity .35s}
+.tel .gt{position:absolute;inset:0 0 auto 0;height:22%;background:linear-gradient(rgba(0,0,0,.45),transparent)}
+.tel .gb{position:absolute;inset:auto 0 0 0;height:48%;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.tel .sb{position:absolute;top:4.6cqw;left:9cqw;right:7.5cqw;display:flex;justify-content:space-between;align-items:center;font:500 5.6cqw/1 NH;z-index:3}
+.tel .sb .si{display:flex;gap:1.5cqw;align-items:center}.tel .sb svg{height:4.3cqw;width:auto;display:block}
+.tel svg{display:block}
+.tel .side{position:absolute;right:2.6cqw;bottom:5cqw;display:flex;flex-direction:column;align-items:center;gap:.6cqw}
+.tel .side svg{width:9.6cqw;height:9.6cqw;filter:drop-shadow(0 .3cqw .8cqw rgba(0,0,0,.45))}
+.tel .side em{font:500 3.7cqw/1 NH;font-style:normal;margin-bottom:3.4cqw}
+.tel .info{position:absolute;left:4.5cqw;right:19cqw;bottom:4.5cqw;display:flex;flex-direction:column;gap:1.7cqw}
+.tel .h{font:500 5cqw/1.1 NH;display:flex;align-items:center;gap:2cqw;white-space:nowrap}
+.tel .cap{font:400 4.1cqw/1.3 NH;opacity:.95}
+.tel .snd{font:400 3.8cqw/1 NH;display:flex;align-items:center;gap:1.5cqw;opacity:.9;white-space:nowrap;overflow:hidden}
+.tel .snd svg{width:3.8cqw;height:3.8cqw;flex:none}
+.tel .vw{font:400 3.8cqw/1 GM;display:flex;align-items:center;gap:1.4cqw;color:#fff;opacity:.85}
+.tel .vw svg{width:3.4cqw;height:3.4cqw}
+.tel .pg{position:absolute;left:0;right:0;bottom:0;height:.7cqw;background:rgba(255,255,255,.2)}
+.tel .pg i{display:block;height:100%;width:0;background:rgba(255,255,255,.85);animation:pg 8s linear infinite}
+@keyframes pg{to{width:100%}}
+.tel .nav{position:absolute;left:0;right:0;bottom:0;height:15.5cqw;background:#000;display:flex;justify-content:space-around;align-items:flex-start;padding-top:1.6cqw;color:#fff}
+.tel .nav>span{display:flex;flex-direction:column;align-items:center;gap:.8cqw;font:500 2.8cqw/1 NH;opacity:.75}
+.tel .nav>span.on{opacity:1}
+.tel .nav svg{width:6.6cqw;height:6.6cqw}
+.tel .nav .plus{width:11cqw;height:7.4cqw;border-radius:2.2cqw;background:#fff;color:#000;display:grid;place-items:center;font:500 6cqw/1 NH;opacity:1}
+.tel .home-ind{position:absolute;left:50%;bottom:.8cqw;width:34cqw;height:1.2cqw;margin-left:-17cqw;border-radius:1cqw;background:#fff;opacity:.9}
+/* TikTok */
+.tel .av{position:relative;width:11.5cqw;height:11.5cqw;border-radius:50%;border:.6cqw solid #fff;background-size:cover;background-position:center;margin-bottom:5cqw}
+.tel .av b{position:absolute;left:50%;bottom:-2.6cqw;width:5cqw;height:5cqw;margin-left:-2.5cqw;border-radius:50%;background:#FE2C55;display:grid;place-items:center;font:500 4cqw/1 NH}
+.tel .disc{width:10.5cqw;height:10.5cqw;border-radius:50%;background:#1d1d1d;border:2.4cqw solid #2a2a2a;background-size:cover;background-position:center;animation:spin 5s linear infinite;margin-top:1cqw}
+@keyframes spin{to{transform:rotate(360deg)}}
+/* Instagram */
+.tel .top{position:absolute;top:13cqw;left:5.5cqw;right:5cqw;display:flex;justify-content:space-between;align-items:center;font:500 6.6cqw/1 NH;z-index:3}
+.tel .top svg{width:7.4cqw;height:7.4cqw}
+.tel .avs{width:7.6cqw;height:7.6cqw;border-radius:50%;background-size:cover;background-position:center;flex:none}
+.tel .seg{font:500 3.8cqw/1 NH;border:.35cqw solid rgba(255,255,255,.75);border-radius:1.8cqw;padding:1.1cqw 2.2cqw}
+.tel .aud{width:8.4cqw;height:8.4cqw;border-radius:2cqw;border:.5cqw solid #fff;background-size:cover;background-position:center;margin-top:1cqw}
+/* estados */
+.tel.off .ui,.tel.off video,.tel.off .feed img{opacity:0}
+.tel.solo .ui,.tel.solo .nav{display:none}.tel.solo .feed{inset:0}
+.tel.gris{filter:grayscale(1) brightness(.5)}
+
+/* ======================= A · NICHOS ======================= */
+#nichos{min-height:100vh;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:4vw;align-items:center;padding:12vh 6vw}
+#nichos .lst{margin-top:5vh;display:flex;flex-direction:column;align-items:flex-start}
+#nichos .lst button{font-weight:500;letter-spacing:-.02em;font-size:clamp(28px,3vw,44px);line-height:1.1;color:#353535;transition:color .25s;text-align:left;display:flex;align-items:baseline;gap:14px}
+#nichos .lst button:hover{color:#8a8a8a}
+#nichos .lst button.on{color:#FD5609}
+#nichos .lst button .mono{font-size:11px;color:inherit;opacity:0;transition:opacity .25s;transform:translateY(-.6em)}
+#nichos .lst button.on .mono{opacity:1}
+#nichos .rt{display:flex;flex-direction:column;align-items:center}
+#nichos .rt .tel{width:min(290px,21vw)}
+#nichos .line{margin-top:28px;font-size:20px;line-height:1.35;text-align:center;max-width:360px;min-height:2.7em;transition:opacity .25s}
+#nichos .red{display:flex;gap:6px;margin-bottom:22px;background:#111;border-radius:999px;padding:4px;box-shadow:0 0 0 1px #222}
+#nichos .red button{font:400 11px/1 GM;text-transform:uppercase;letter-spacing:.08em;padding:9px 14px;border-radius:999px;color:#8a8a8a}
+#nichos .red button.on{background:#F9F9F9;color:#000}
+#nichos .foot{margin-top:6vh;display:flex;flex-direction:column;gap:10px}
+#nichos .foot p{font-size:15px;color:#8a8a8a}
+.lnk{text-decoration:none;color:#F9F9F9;font-size:15px;display:inline-flex;gap:8px;align-items:center;border-bottom:1px solid #444;padding-bottom:2px;width:max-content}
+.lnk:hover{border-color:#FD5609}
+
+/* ======================= B · DIFERENCIA + COMPARACIÓN ======================= */
+#dif .hd{text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.cg{margin-top:9vh;display:grid;grid-template-columns:170px repeat(4,1fr);position:relative}
+
+.cg .cc{grid-row:1;display:flex;flex-direction:column;align-items:center;gap:18px;padding:30px 16px 26px;text-align:center}
+
+.cg .cv{height:190px;width:100%;position:relative}
+.cg .cv .tel{position:absolute;width:58px}
+.cg .rl{grid-column:1;align-self:stretch;display:flex;align-items:center;padding:22px 0;border-top:1px solid #1c1c1c}
+.cg p{font-size:17px;line-height:1.3;color:#6f6f6f;text-align:center;padding:22px 18px;border-top:1px solid #1c1c1c;display:flex;align-items:center;justify-content:center}
+.cg p.mu{color:#fff;font-weight:500;border-top-color:rgba(253,86,9,.25)}
+.cg .mu{background:rgba(253,86,9,.07);box-shadow:inset 1px 0 0 rgba(253,86,9,.45),inset -1px 0 0 rgba(253,86,9,.45)}
+.cg .cc.mu{border-radius:22px 22px 0 0;box-shadow:inset 1px 0 0 rgba(253,86,9,.45),inset -1px 0 0 rgba(253,86,9,.45),inset 0 1px 0 rgba(253,86,9,.45)}
+.cg p.mu.last{border-radius:0 0 22px 22px;box-shadow:inset 1px 0 0 rgba(253,86,9,.45),inset -1px 0 0 rgba(253,86,9,.45),inset 0 -1px 0 rgba(253,86,9,.45)}
+.cg .sp{grid-column:1;grid-row:1}
+.cg .pat{position:absolute;left:50%;top:22px;transform:translateX(-50%);font:500 10px/1 NH;background:rgba(255,255,255,.9);color:#000;border-radius:4px;padding:4px 6px;z-index:3;white-space:nowrap}
+
+/* ======================= C · CÓMO SE TRABAJA / E · FAQ ======================= */
+.two{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:5vw;align-items:start}
+.stk{position:sticky;top:16vh;display:flex;flex-direction:column;gap:22px}
+.card{border-radius:20px;background:#0c0c0c;box-shadow:0 0 0 1px #1f1f1f;padding:44px 44px 40px;display:flex;flex-direction:column;gap:18px}
+.card+.card{margin-top:20px}
+.card h3{font-weight:500;font-size:32px;letter-spacing:-.015em;line-height:1.05}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.chips span{font:400 11px/1 GM;text-transform:uppercase;letter-spacing:.06em;color:#cfcfcf;border:1px solid #2c2c2c;border-radius:999px;padding:9px 13px}
+.chips span.or{border-color:#FD5609;color:#FD5609}
+.grp{margin-bottom:6vh}
+.grp>.mono{margin-bottom:14px}
+.q{border-top:1px solid #1f1f1f}
+.q:last-child{border-bottom:1px solid #1f1f1f}
+.q button{width:100%;display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-size:20px;text-align:left}
+.q button i{font-style:normal;font-size:24px;color:#8a8a8a;transition:transform .3s}
+.q.open button i{transform:rotate(45deg);color:#FD5609}
+.q .a{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.q.open .a{grid-template-rows:1fr}
+.q .a>div{overflow:hidden}
+.q .a p{padding:0 60px 22px 0;font-size:17px;line-height:1.45;color:#a8a8a8}
+.wa{text-decoration:none;display:inline-flex;align-items:center;gap:10px;background:#F9F9F9;color:#000;border-radius:999px;padding:13px 20px;font-weight:500;font-size:15px;width:max-content}
+
+/* ======================= D · PLATAFORMA ======================= */
+#pla .hd{text-align:center;display:flex;flex-direction:column;align-items:center;gap:22px}
+.dash{margin:9vh auto 0;max-width:1200px;border-radius:24px;background:#0b0b0b;box-shadow:0 0 0 1px #222,0 40px 120px rgba(0,0,0,.6);padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.dash .tag{grid-column:1/-1;display:flex;justify-content:space-between;align-items:center}
+.dash .pill{font:400 10px/1 GM;letter-spacing:.08em;text-transform:uppercase;color:#FD5609;border:1px solid #FD5609;border-radius:999px;padding:7px 11px}
+.dash .pn{display:flex;flex-direction:column;gap:12px}
+.dash .up{border:1px dashed #333;border-radius:14px;padding:22px;display:flex;justify-content:space-between;align-items:center}
+.dash .up b{font-weight:500;font-size:18px;display:block}.dash .up span{font-size:14px;color:#8a8a8a}
+.dash .up .btn{background:#FD5609;color:#fff;border-radius:999px;padding:9px 16px;font-size:14px}
+.dash .it{display:flex;align-items:center;gap:14px;background:#121212;border-radius:12px;padding:10px 14px}
+.dash .it img{width:34px;height:56px;object-fit:cover;border-radius:6px}
+.dash .it div{flex:1}.dash .it b{font-weight:500;font-size:15px;display:block}.dash .it span{font-size:13px;color:#7a7a7a}
+.dash .it .st{font:400 10px/1 GM;letter-spacing:.06em;text-transform:uppercase;color:#aaa;border:1px solid #2a2a2a;border-radius:999px;padding:6px 9px}
+.dash .it .st.or{color:#FD5609;border-color:#5a2a10}
+.dash .bar{display:grid;grid-template-columns:150px 1fr 40px;gap:14px;align-items:center;font-size:14px;color:#cfcfcf}
+.dash .bar i{height:6px;border-radius:3px;background:#222;position:relative;overflow:hidden}
+.dash .bar i::after{content:"";position:absolute;inset:0 auto 0 0;width:var(--w);background:linear-gradient(90deg,#C10801,#FD5609);border-radius:3px}
+.dash .bar span{text-align:right;font-family:GM;font-size:12px}
+.dash .big{font-weight:500;font-size:44px;letter-spacing:-.02em;line-height:1}
+.dash .kp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.dash .kp div{background:#121212;border-radius:12px;padding:16px}
+.dash .kp .mono{margin-bottom:10px}
+
+.dash .acts{display:flex;gap:8px}.dash .acts span{font-size:13px;border:1px solid #333;border-radius:999px;padding:7px 14px}.dash .it .vv{font-weight:500;font-size:15px}
+.outro{height:60vh;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px;text-align:center}
+.hint{position:fixed;right:18px;bottom:18px;z-index:50}
+</style></head><body>
+<div class="hint mono">Boceto · zona de abajo · probalo en compu</div>
+
+<!-- ================= A · PARA TODOS LOS NICHOS ================= -->
+<section id="nichos">
+  <div class="lf">
+    <div class="mono" style="margin-bottom:16px">para quién</div>
+    <h2>Para todos <em>los nichos.</em></h2>
+    <p class="b" style="margin-top:20px">Para quien ya graba y tiene algo para decir. Elegí el tuyo.</p>
+    <div class="lst" id="lst"></div>
+    <div class="foot">
+      <p>¿Es un negocio sin cara visible? También funciona para tiendas online, inmobiliarias y academias.</p>
+      <a class="lnk" href="#">¿No está tu nicho? Escribinos <span>→</span></a>
+    </div>
+  </div>
+  <div class="rt">
+    <div id="telN"></div>
+    <p class="line" id="line"></p>
+  </div>
+</section>
+
+<!-- ================= B · LA DIFERENCIA (con la comparación) ================= -->
+<section id="dif" class="blk">
+  <div class="wrap hd">
+    <div class="mono">la diferencia</div>
+    <h2>Cuentas exclusivas<br><em>para tu marca.</em></h2>
+    <p class="b">Más alcance que un anuncio. Más control que el clipping.</p>
+  </div>
+  <div class="wrap"><div class="cg" id="cg">
+    <div class="sp"></div>
+    <div class="cc" style="grid-column:2"><div class="cv" id="v1"></div><div class="mono">una sola cuenta</div></div>
+    <div class="cc" style="grid-column:3"><div class="cv" id="v2"></div><div class="mono">anuncios pagos</div></div>
+    <div class="cc" style="grid-column:4"><div class="cv" id="v3"></div><div class="mono">agencias de clipping</div></div>
+    <div class="cc mu" style="grid-column:5"><div class="cv" id="v4"></div><div class="mono or">multie</div></div>
+    <div class="rl mono">dónde se publica</div>
+    <p>En tu cuenta</p><p>En tu cuenta, como anuncio</p><p>En cuentas de terceros</p><p class="mu">En decenas de cuentas solo tuyas</p>
+    <div class="rl mono">quién lo publica</div>
+    <p>Vos, cuando podés</p><p>La plataforma, mientras pagás</p><p>Cada creador, a su manera</p><p class="mu">Personas, desde teléfonos reales</p>
+    <div class="rl mono">cuánto se publica</div>
+    <p>Uno o dos videos por día</p><p>Lo que pagues</p><p>Mucho, sin control</p><p class="mu">Decenas de videos, todos los días</p>
+    <div class="rl mono">para qué público</div>
+    <p>El que ya te sigue</p><p>El que segmentes</p><p>El de cada creador</p><p class="mu">El del país que elijas</p>
+    <div class="rl mono">qué queda</div>
+    <p>Una cuenta</p><p>Nada, cuando dejás de pagar</p><p>Videos en cuentas ajenas</p><p class="mu last">Cuentas y audiencia de tu marca</p>
+  </div></div>
+</section>
+
+<!-- ================= C · CÓMO SE TRABAJA ================= -->
+<section class="blk wrap">
+  <div class="two">
+    <div class="stk">
+      <div class="mono">cómo se trabaja</div>
+      <h2>Dos formas<br><em>de trabajar.</em></h2>
+      <p class="b" style="max-width:420px">Las dos están incluidas. Se elige según cuánto apoyo necesite el proyecto.</p>
+    </div>
+    <div>
+      <div class="card">
+        <div class="mono or">01</div>
+        <h3>Con el contenido resuelto.</h3>
+        <p class="b">Ya sabés qué querés decir. Nos mandás el material, lo editamos y lo publicamos desde las cuentas.</p>
+        <div class="chips"><span>Edición</span><span>Subtítulos</span><span class="or">Publicación en multicuentas</span><span>Métricas</span></div>
+      </div>
+      <div class="card">
+        <div class="mono or">02</div>
+        <h3>Con estrategia.</h3>
+        <p class="b">Arrancamos por el análisis del proyecto. Definimos qué temas se cuentan, cómo se habla y qué se muestra. Después editamos y publicamos siguiendo ese plan.</p>
+        <div class="chips"><span>Análisis del proyecto</span><span>Plan de temas</span><span>Edición</span><span class="or">Publicación en multicuentas</span><span>Métricas</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= D · LA PLATAFORMA ================= -->
+<section id="pla" class="blk wrap">
+  <div class="hd">
+    <div class="mono">la plataforma</div>
+    <h2>Visibilidad<br><em>de verdad.</em></h2>
+    <p class="b" style="max-width:560px">Todo lo que se publica se ve en un solo lugar: qué cuenta lo publicó, cuándo y cómo rindió.</p>
+  </div>
+  <div class="dash">
+    <div class="tag"><span class="pill">ejemplo ilustrativo</span></div>
+    <div class="pn">
+      <div class="mono">operar la red</div>
+      <div class="up"><div><b>Subir contenido</b><span>Arrastrá un archivo o pegá un link</span></div><span class="btn">Subir</span></div>
+      <div class="mono" style="margin-top:10px">videos en publicación</div>
+      <div class="it"><img src="../../assets/cortos/01-trading.jpg" alt=""><div><b>Corte 14 · apertura</b><span>@cuenta-03 · Hoy 18:30</span></div><span class="st">programado</span></div>
+      <div class="it"><img src="../../assets/cortos/02-finanzas.jpg" alt=""><div><b>Corte 09 · pregunta</b><span>@cuenta-11 · Hoy 20:00</span></div><span class="st or">en revisión</span></div>
+      <div class="it"><img src="../../assets/cortos/03-real-estate.jpg" alt=""><div><b>Corte 21 · cierre</b><span>@cuenta-07 · Mañana 09:15</span></div><span class="st">programado</span></div>
+      <div class="acts"><span>Aprobar</span><span>Rechazar</span></div>
+    </div>
+    <div class="pn">
+      <div class="mono">leer los resultados</div>
+      <div class="mono" style="color:#5d5d5d">rendimiento por cuenta</div>
+      <div class="bar">@cuenta-03<i style="--w:82%"></i><span>82</span></div>
+      <div class="bar">@cuenta-07<i style="--w:64%"></i><span>64</span></div>
+      <div class="bar">@cuenta-11<i style="--w:47%"></i><span>47</span></div>
+      <div class="bar">@cuenta-02<i style="--w:31%"></i><span>31</span></div>
+      <div class="mono" style="color:#5d5d5d;margin-top:8px">mejores piezas</div>
+      <div class="it"><img src="../../assets/cortos/02-finanzas.jpg" alt=""><div><b>Corte 14 · apertura</b></div><span class="vv">48,2 mil</span></div>
+      <div class="it"><img src="../../assets/cortos/05-calle.jpg" alt=""><div><b>Corte 06 · ejemplo</b></div><span class="vv">31,9 mil</span></div>
+      <div class="it"><img src="../../assets/cortos/06-clase.jpg" alt=""><div><b>Corte 21 · cierre</b></div><span class="vv">22,4 mil</span></div>
+      <div class="mono" style="color:#5d5d5d;margin-top:8px">qué tipo de video rinde</div>
+      <div class="bar">Pregunta y respuesta<i style="--w:74%"></i><span>74</span></div>
+      <div class="bar">Consejo corto<i style="--w:58%"></i><span>58</span></div>
+      <div class="bar">Anécdota<i style="--w:36%"></i><span>36</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= E · PREGUNTAS FRECUENTES ================= -->
+<section class="blk wrap">
+  <div class="two">
+    <div class="stk">
+      <div class="mono">preguntas frecuentes</div>
+      <h2>Antes<br><em>de hablar.</em></h2>
+      <p class="b" style="max-width:360px">¿No está tu pregunta? Escribinos y lo vemos.</p>
+      <a class="wa" href="#">Hablar por WhatsApp <span>→</span></a>
+    </div>
+    <div id="faq"></div>
+  </div>
+</section>
+
+<section class="outro"><div class="mono">fin del boceto</div><h2>Zona de abajo<br><em>en dos columnas.</em></h2></section>
+
+<script src="lenis.min.js"></script>
+<script>
+const M=n=>n==='creador'?'../../assets/apertura/creador':'../../assets/cortos/'+n;
+const $=s=>document.querySelector(s);
+/* ======================= COMPONENTE TELÉFONO ======================= */
+const I={
+ sig:'<svg viewBox="0 0 18 12"><rect y="8" width="3" height="4" rx="1" fill="#fff"/><rect x="5" y="5.5" width="3" height="6.5" rx="1" fill="#fff"/><rect x="10" y="3" width="3" height="9" rx="1" fill="#fff"/><rect x="15" width="3" height="12" rx="1" fill="#fff"/></svg>',
+ wifi:'<svg viewBox="0 0 16 12"><path d="M8 11.5l2.4-2.9a3.6 3.6 0 0 0-4.8 0z" fill="#fff"/><path d="M2.6 5.6a8 8 0 0 1 10.8 0l-1.5 1.8a5.6 5.6 0 0 0-7.8 0z" fill="#fff"/><path d="M0 2.7a12 12 0 0 1 16 0l-1.5 1.8a9.6 9.6 0 0 0-13 0z" fill="#fff"/></svg>',
+ bat:'<svg viewBox="0 0 27 12"><rect x=".5" y=".5" width="23" height="11" rx="3" fill="none" stroke="#fff" opacity=".5"/><rect x="2" y="2" width="17" height="8" rx="1.6" fill="#fff"/><rect x="24.5" y="4" width="2" height="4" rx="1" fill="#fff" opacity=".5"/></svg>',
+ heart:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 21s-7.6-4.7-9.7-9.3C.8 8.3 3 4.4 6.7 4.4c2.1 0 3.6 1.1 4.4 2.6.8-1.5 2.3-2.6 4.4-2.6 3.7 0 5.9 3.9 4.4 7.3C19.6 16.3 12 21 12 21z"/></svg>',
+ heartO:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" d="M12 20s-7-4.4-9-8.7C1.6 8.1 3.6 4.8 6.8 4.8c2 0 3.4 1 4.2 2.5h2c.8-1.5 2.2-2.5 4.2-2.5 3.2 0 5.2 3.3 3.8 6.5C19 15.6 12 20 12 20z"/></svg>',
+ com:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3C6.5 3 2 6.8 2 11.5c0 2.6 1.4 4.9 3.6 6.5L5 21.5l4.1-2.1c.9.2 1.9.3 2.9.3 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/><circle cx="8" cy="11.5" r="1.3" fill="#000" opacity=".55"/><circle cx="12" cy="11.5" r="1.3" fill="#000" opacity=".55"/><circle cx="16" cy="11.5" r="1.3" fill="#000" opacity=".55"/></svg>',
+ comO:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M20.5 12a8.5 8.5 0 1 1-3.6-6.9A8.5 8.5 0 0 1 20.5 12zM20.5 20.5l-1.4-4.3"/></svg>',
+ save:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M6 3h12a1 1 0 0 1 1 1v17l-7-4.5L5 21V4a1 1 0 0 1 1-1z"/></svg>',
+ share:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 4l8 7.5-8 7.5v-4.6c-6 0-9.5 1.9-12 5.6 1-6 4.5-10.5 12-11.5V4z"/></svg>',
+ send:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M21.5 3L10 14.3M21.5 3l-7 18-4.5-6.7L3 9.8z"/></svg>',
+ dots:'<svg viewBox="0 0 24 24"><circle cx="5" cy="12" r="1.8" fill="currentColor"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/><circle cx="19" cy="12" r="1.8" fill="currentColor"/></svg>',
+ note:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 18.5a3 3 0 1 1-2-2.8V5l12-2v12.5a3 3 0 1 1-2-2.8V7.4L9 8.8z"/></svg>',
+ cam:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M3 8h3.5L8.5 5h7l2 3H21v12H3z"/><circle cx="12" cy="13.5" r="3.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>',
+ play:'<svg viewBox="0 0 10 10"><path fill="currentColor" d="M2 1l7 4-7 4z"/></svg>',
+ home:'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 3l9 8h-2.5v9h-5v-6h-3v6h-5v-9H3z"/></svg>',
+ homeO:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round" d="M4 10.5L12 4l8 6.5V20h-5.5v-5.5h-5V20H4z"/></svg>',
+ friends:'<svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2.5 20c.6-3.6 3.2-5.6 6.5-5.6s5.9 2 6.5 5.6" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="9" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M17 14c2.6 0 4.2 1.6 4.6 4.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>',
+ inbox:'<svg viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" d="M4 5h16v11H9l-5 4z"/></svg>',
+ user:'<svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M4 21c.8-4.2 4-6.5 8-6.5s7.2 2.3 8 6.5" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>',
+ search:'<svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="1.9"/></svg>',
+ plusSq:'<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="1.9"/></svg>',
+ reels:'<svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="currentColor"/><path d="M3.8 8.5h16.4M8.5 3.8l2.8 4.7M14 3.8l2.8 4.7" stroke="#000" stroke-width="1.5"/><path d="M10.3 11.6v5.2l4.4-2.6z" fill="#000"/></svg>'};
+const fmt=n=>n<1000?String(Math.round(n)):n<1e6?(n/1000).toFixed(1).replace('.',',')+' mil':(n/1e6).toFixed(1).replace('.',',')+' M';
+/*  Teléfono({red:'tt'|'ig', video, poster, usuario, texto, likes, comentarios, guardados, compartidos, vistas, vistasFijas, encendido, modo:'completo'|'solo'})  */
+function Telefono(o){
+ const d=document.createElement('div');d.className='tel';
+ const st={...o,t0:performance.now()};
+ const statusBar=`<div class="sb"><span>9:41</span><span class="si">${I.sig}${I.wifi}${I.bat}</span></div>`;
+ const vistas=`<span class="vw">${I.play}<span class="vn">0</span></span>`;
+ function ui(){
+  if(st.red==='ig') return `<div class="gt"></div><div class="gb"></div>${statusBar}
+   <div class="top"><span>Reels</span>${I.cam}</div>
+   <div class="side">${I.heartO}<em>${st.likes}</em>${I.comO}<em>${st.comentarios}</em>${I.send}<em>${st.compartidos}</em>${I.dots}<div class="aud" style="background-image:url(${st.poster})"></div></div>
+   <div class="info"><div class="h"><span class="avs" style="background-image:url(${st.poster})"></span>${st.usuario}<span class="seg">Seguir</span></div><div class="cap">${st.texto}</div><div class="snd">${I.note}${st.usuario} · Audio original</div>${vistas}</div>
+   <div class="pg"><i></i></div>`;
+  return `<div class="gt"></div><div class="gb"></div>${statusBar}
+   <div class="side"><div class="av" style="background-image:url(${st.poster})"><b>+</b></div>${I.heart}<em>${st.likes}</em>${I.com}<em>${st.comentarios}</em>${I.save}<em>${st.guardados}</em>${I.share}<em>${st.compartidos}</em><div class="disc" style="background-image:url(${st.poster})"></div></div>
+   <div class="info"><div class="h">@${st.usuario}</div><div class="cap">${st.texto}</div><div class="snd">${I.note}sonido original · ${st.usuario}</div>${vistas}</div>
+   <div class="pg"><i></i></div>`}
+ function nav(){
+  if(st.red==='ig') return `<div class="nav"><span class="on">${I.homeO}</span><span>${I.search}</span><span>${I.plusSq}</span><span class="on">${I.reels}</span><span><span class="avs" style="width:6.6cqw;height:6.6cqw;background-image:url(${st.poster})"></span></span></div><div class="home-ind"></div>`;
+  return `<div class="nav"><span class="on">${I.home}Inicio</span><span>${I.friends}Amigos</span><span class="plus">+</span><span>${I.inbox}Bandeja</span><span>${I.user}Perfil</span></div><div class="home-ind"></div>`}
+ function render(){
+  d.className='tel'+(st.encendido===false?' off':'')+(st.modo==='solo'?' solo':'')+(st.gris?' gris':'');
+  d.innerHTML=`<i class="bt b1"></i><i class="bt b2"></i><i class="bt b3"></i><div class="scr"><div class="feed">${st.video?`<video src="${st.video}" poster="${st.poster}" autoplay muted loop playsinline></video>`:`<img src="${st.poster}" alt="">`}<div class="ui">${ui()}</div></div>${nav()}</div><div class="isl"></div>`;
+  d.querySelector('.pg i')&&(d.querySelector('.pg i').style.animationDelay=`-${(Math.random()*8).toFixed(2)}s`)}
+ render();
+ return{el:d,
+  set(p){const re=('red' in p&&p.red!==st.red)||('video' in p&&p.video!==st.video);Object.assign(st,p);if('vistas' in p||'video' in p)st.t0=performance.now();if(re)render();else render()},
+  tick(now){const v=d.querySelector('.vn');if(!v)return;v.textContent=st.vistasFijas||(fmt((st.vistas||0)*(1-Math.exp(-(now-st.t0)/3000)))+' vistas')}};
+}
+const TELS=[];
+/* ======================= A · NICHOS ======================= */
+const NICHOS=[
+ ['Trading','Tu lectura del mercado, en el feed de traders que todavía no te siguen.','01-trading','mercados.hoy','La vela que nadie miró esta mañana. #trading #mercados'],
+ ['Inversiones','Las ideas que hoy explicás a pocos, frente a gente nueva todos los días.','02-finanzas-b','invertir.claro','Lo que haría con mis primeros ahorros. #inversiones'],
+ ['Finanzas personales','El consejo que le ordena el mes a alguien, justo en su feed.','02-finanzas','plata.clara','La regla que me cambió el mes. #finanzas #ahorro'],
+ ['Cripto','La novedad del día, publicada mientras todavía es noticia.','01-trading-b','cripto.simple','Qué pasó hoy, en un minuto. #cripto'],
+ ['Negocios','Una charla de una hora, partida en decenas de aprendizajes cortos.','05-calle-b','negocios.de.calle','Le pregunté cuánto factura. #negocios'],
+ ['Real estate','Tus propiedades y tu criterio, a la vista de compradores nuevos.','03-real-estate','casa.propia','Esto no te lo muestran en la visita. #realestate'],
+ ['Ecommerce','Tu producto, frente a públicos que todavía no lo conocen.','04-ecommerce','tienda.online','Así se arma un pedido. #ecommerce'],
+ ['Coaching','Tus ideas, contadas de muchas formas y en muchas cuentas.','06-clase','clase.abierta','El ejercicio que hago con todos. #coaching'],
+ ['Desarrollo personal','Esa reflexión que funciona, llegando a quien todavía no te escuchó.','06-clase-b','mente.en.orden','Lo que aprendí este año. #desarrollopersonal'],
+ ['Podcasts','El episodio entero, cortado en los momentos que más enganchan.','creador','el.podcast','El mejor momento del episodio. #podcast']];
+const lst=$('#lst');let cur=0,red='tt',auto=true,timer;
+NICHOS.forEach((n,i)=>{const b=document.createElement('button');b.innerHTML=`${n[0]}<span class="mono">${String(i+1).padStart(2,'0')}</span>`;b.onmouseenter=()=>{show(i)};b.onclick=()=>{auto=false;show(i)};lst.appendChild(b)});
+lst.onmouseenter=()=>clearInterval(timer);lst.onmouseleave=()=>{if(auto)startAuto()};
+const telN=Telefono({red,video:'',poster:'',usuario:'',texto:'',likes:'',comentarios:'',guardados:'',compartidos:'',vistas:0});
+$('#telN').appendChild(telN.el);TELS.push(telN);
+function show(i){cur=i;const n=NICHOS[i];[...lst.children].forEach((b,k)=>b.classList.toggle('on',k===i));
+ telN.set({red:i%2?'ig':'tt',video:`${M(n[2])}.mp4`,poster:`${M(n[2])}.jpg`,usuario:n[3],texto:n[4],likes:fmt(8e3+i*3711%60000),comentarios:fmt(120+i*97),guardados:fmt(900+i*421),compartidos:fmt(300+i*233),vistas:1.2e5+((i*7919)%9)*1.1e5});
+ const l=$('#line');l.style.opacity=0;setTimeout(()=>{l.textContent=n[1];l.style.opacity=1},150)}
+function startAuto(){clearInterval(timer);timer=setInterval(()=>show((cur+1)%NICHOS.length),3800)}
+show(0);startAuto();
+/* ======================= B · DIFERENCIA ======================= */
+const POS=['01-trading','02-finanzas','03-real-estate','04-ecommerce','05-calle','06-clase','01-trading-b','02-finanzas-b','03-real-estate-b','04-ecommerce-b','05-calle-b','06-clase-b'];
+function put(box,o,css){const t=Telefono(o);t.el.style.cssText=css;$(box).appendChild(t.el);return t}
+put('#v1',{red:'tt',video:'../../assets/apertura/creador.mp4',poster:'../../assets/apertura/creador.jpg',modo:'solo'},'left:calc(50% - 29px);top:35px');
+put('#v2',{red:'ig',video:'../../assets/cortos/04-ecommerce-b.mp4',poster:'../../assets/cortos/04-ecommerce-b.jpg',modo:'solo'},'left:calc(50% - 29px);top:35px');
+$('#v2').insertAdjacentHTML('beforeend','<span class="pat">Patrocinado</span>');
+[[18,30,-14],[40,8,9],[58,40,-8]].forEach(([x,y,r],i)=>put('#v3',{red:'tt',poster:`${M(POS[[7,8,10][i]])}.jpg`,modo:'solo',gris:true},`left:${x}%;top:${y}px;transform:rotate(${r}deg)`));
+for(let k=0;k<6;k++){const i=[0,7,2,9,4,11][k],c=k%3,r=Math.floor(k/3);put('#v4',{red:i%2?'ig':'tt',video:`${M(POS[i])}.mp4`,poster:`${M(POS[i])}.jpg`,modo:'solo'},`width:44px;left:calc(50% - 74px + ${c*52}px);top:${r*95}px`)}
+/* ======================= E · FAQ ======================= */
+const FAQ=[['el servicio',[
+ ['¿Qué hace Multie?','Convertimos tu material en videos cortos y los publicamos todos los días desde muchas cuentas a la vez, en TikTok, Instagram y Facebook.'],
+ ['¿En qué se diferencia de una agencia?','Una agencia maneja tus cuentas. Multie publica tu contenido en muchas cuentas al mismo tiempo: son tuyas y las manejamos nosotros. Y a diferencia de las agencias de clipping, esas cuentas no son de terceros que cobran por vista.'],
+ ['¿Usan bots?','No. Cada video se sube desde un teléfono real, por una persona.'],
+ ['¿Por qué teléfonos reales?','Porque cada cuenta tiene que comportarse como la de cualquier persona: su teléfono, su conexión y alguien que publica a mano. Así las redes la tratan como una cuenta más.'],
+ ['¿En qué redes publican?','TikTok, Instagram y Facebook. Las redes se definen según el plan.']]],
+ ['el contenido',[
+ ['¿Quién hace los videos?','El equipo de Multie, con tu material: videos largos, fotos, productos o preguntas que respondés a cámara.'],
+ ['¿Tengo que grabar?','Depende del caso. Muchas veces alcanza con lo que ya tenés. Si no, con una sesión por mes.'],
+ ['¿Puedo aprobar antes de que se publique?','Sí. Aprobás las primeras tandas y después se publica con el criterio que acordamos.'],
+ ['¿Qué pasa con los derechos del material?','Publicamos solo contenido del que tenés los derechos. Si hay material de terceros, se revisa antes.']]],
+ ['las cuentas',[
+ ['¿Las cuentas son mías?','Sí, son tuyas. Nosotros las manejamos desde nuestros teléfonos y decidimos qué publica cada una, pero la cuenta y su audiencia son tuyas.'],
+ ['¿En qué se diferencia de una agencia de clipping?','El clipping reparte tu video entre cuentas de terceros que cobran por vista. En Multie las cuentas trabajan solo para vos y las manejamos nosotros.'],
+ ['¿Pueden publicar para otro país?','Sí. Cada cuenta se arma para el país que elijas, así el contenido le llega al público de ese lugar.'],
+ ['¿Cuántas cuentas publican mi contenido?','Depende del plan y de la cantidad de videos. Se reparte para que ninguna cuenta se sature.'],
+ ['¿Qué pasa si se cae una cuenta?','La reemplazamos por otra, sin costo y sin cortar la publicación.']]],
+ ['resultados',[
+ ['¿Cómo veo los resultados?','En la plataforma: cada video, cada cuenta, vistas e interacciones.'],
+ ['¿Garantizan vistas?','No garantizamos vistas. Garantizamos la cantidad de videos publicados que incluye tu plan.'],
+ ['¿Cuándo se ven los resultados?','Las primeras métricas aparecen en la primera semana. Los resultados se leen mes a mes.']]]];
+FAQ.forEach(([g,qs],gi)=>{const G=document.createElement('div');G.className='grp';G.innerHTML=`<div class="mono or">${g}</div>`;
+ qs.forEach(([q,a],qi)=>{const d=document.createElement('div');d.className='q'+(gi===0&&qi===0?' open':'');d.innerHTML=`<button>${q}<i>+</i></button><div class="a"><div><p>${a}</p></div></div>`;d.querySelector('button').onclick=()=>{const o=d.classList.contains('open');document.querySelectorAll('.q.open').forEach(x=>x.classList.remove('open'));if(!o)d.classList.add('open')};G.appendChild(d)});
+ $('#faq').appendChild(G)});
+/* ======================= scroll ======================= */
+const lenis=new Lenis({lerp:.09,smoothWheel:true});
+function raf(t){lenis.raf(t);TELS.forEach(T=>T.tick(t));requestAnimationFrame(raf)}requestAnimationFrame(raf);
+</script></body></html>

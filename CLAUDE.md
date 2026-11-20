@@ -4,12 +4,12 @@ La fuente de verdad es `BIBLIA.md`. Leela antes de proponer o cambiar cualquier 
 
 ## Reglas que no se rompen
 
-- **Textos:** van tal cual están en el guion de la biblia. No se reescriben ni se acortan sin aprobación de Cotu.
+- **Textos:** van tal cual están en el guion de la biblia y en el feedback más reciente. No se reescriben, no se acortan y no se inventan sin aprobación de Cotu. En la página no se nombra cómo se llega a otros países (nada de proxys).
 - **Palabras:** "multicuentas", alternada con "teléfonos propios" o "teléfonos reales". Nunca "granja" ni precios. Bots y garantías se mencionan solo en las preguntas frecuentes, con las respuestas aprobadas. No se nombran clientes.
-- **Scroll:** sin inercia ni suavizado (nada de Lenis). La animación sigue el scroll exacto.
-- **Sin indicadores de avance:** ni barras de progreso, ni "paso 1/4", ni contadores de pasos.
+- **Scroll:** con inercia, usando Lenis (`lerp: 0.09`) conectado a GSAP y ScrollTrigger. Es clave.
+- **Sin barras de progreso:** nada que marque cuánto falta de una escena. Los pasos 01–04 del proceso sí van, porque son texto del guion.
 - **Fondo:** degradado cálido en la apertura y el cierre, negro plano en el medio. Sin estrellas.
-- **Teléfonos:** desperdigados, sin patrón, salvo en el embudo, donde van en una grilla ordenada de 20 o más. Sin halo ni desenfoque. El teléfono protagonista va sin bordes de color.
+- **Teléfonos:** todos salen de un único componente. La interfaz final (TikTok e Instagram) la entregan Cotu y Claude en `componentes/telefono/`: no la rehagas. Las redes se alternan entre teléfonos. Sin halo ni desenfoque.
 - **Compu y celular:** la página tiene que funcionar en 1440 px y en 390 px. Ningún objeto tapa un texto. Por decisión de Cotu, ahora se cierra primero la versión de compu y celular se revisa después.
 - **Imágenes:** nada de fotos de bancos públicos. Los assets están en `assets/` o los pone Cotu.
 
